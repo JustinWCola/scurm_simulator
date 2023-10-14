@@ -64,15 +64,18 @@
     <Analyzer Include="/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/ROS2CamPublisher.cs" />
-    <Compile Include="Assets/Scripts/ROS2OffsetSubscriber.cs" />
+    <Compile Include="Assets/Scripts/ROS2/ROS2ShootPublisher.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2ListenerExample.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2PerformanceTest.cs" />
+    <Compile Include="Assets/Scripts/Controller/ArmorController.cs" />
+    <Compile Include="Assets/Scripts/ROS2/ROS2OffsetSubscriber.cs" />
+    <Compile Include="Assets/Scripts/Controller/FanController.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2UnityComponent.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2UnityCore.cs" />
+    <Compile Include="Assets/Scripts/Controller/SpinController.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/Transformations.cs" />
+    <Compile Include="Assets/Scripts/ROS2/ROS2CamPublisher.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2ForUnity.cs" />
-    <Compile Include="Assets/Scripts/ROS2ImuPublisher.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/Time/ROS2TimeSource.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/Time/ITimeSource.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/Sensor.cs" />
@@ -80,12 +83,14 @@
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2TalkerExample.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/Time/DotnetTimeSource.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/Time/TimeUtils.cs" />
+    <Compile Include="Assets/Scripts/Controller/FlowerController.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2ServiceExample.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2Node.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/Time/ROS2Clock.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2ClientExample.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/PostInstall.cs" />
-    <Compile Include="Assets/Scripts/ROS2ShootPublisher.cs" />
+    <Compile Include="Assets/Scripts/Controller/LightController.cs" />
+    <Compile Include="Assets/Scripts/ROS2/ROS2ImuPublisher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Ros2ForUnity/Plugins/example_interfaces_assembly.dll" />
@@ -107,15 +112,12 @@
     <None Include="Assets/Ros2ForUnity/Plugins/metadata_ros2cs.xml" />
     <None Include="Assets/Ros2ForUnity/Plugins/ros2cs_common.dll" />
     <None Include="Assets/Ros2ForUnity/Plugins/Linux/x86_64/metadata_ros2cs.xml" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
     <None Include="Assets/Ros2ForUnity/Plugins/std_msgs_assembly.dll" />
     <None Include="Assets/Ros2ForUnity/Plugins/statistics_msgs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/Ros2ForUnity/Plugins/sensor_msgs_assembly.dll" />
     <None Include="Assets/Ros2ForUnity/Plugins/test_msgs_assembly.dll" />
     <None Include="Assets/Ros2ForUnity/Plugins/diagnostic_msgs_assembly.dll" />
     <None Include="Assets/Ros2ForUnity/Plugins/visualization_msgs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
     <None Include="Assets/Ros2ForUnity/Plugins/shape_msgs_assembly.dll" />
     <None Include="Assets/Ros2ForUnity/Plugins/builtin_interfaces_assembly.dll" />
     <None Include="Assets/Ros2ForUnity/Plugins/composition_interfaces_assembly.dll" />
@@ -1065,14 +1067,6 @@
       <HintPath>Library/ScriptAssemblies/Unity.Services.Analytics.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing.Stores">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation">
-      <HintPath>Library/ScriptAssemblies/Unity.AI.Navigation.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
       <Private>False</Private>
@@ -1101,10 +1095,6 @@
       <HintPath>Library/ScriptAssemblies/Unity.Services.Core.Environments.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityCore">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1113,32 +1103,12 @@
       <HintPath>Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing.Codeless">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-      <HintPath>Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
@@ -1147,10 +1117,6 @@
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityStub">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
@@ -1193,10 +1159,6 @@
       <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Purchasing.Common">
-      <HintPath>Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1217,10 +1179,6 @@
       <HintPath>Library/ScriptAssemblies/Unity.Robotics.UrdfImporter.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.AI.Navigation.Updater">
-      <HintPath>Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="vhacd">
       <HintPath>Library/ScriptAssemblies/vhacd.dll</HintPath>
       <Private>False</Private>
@@ -1235,14 +1193,6 @@
     </Reference>
     <Reference Include="Unity.Robotics.UrdfImporter.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Robotics.UrdfImporter.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
