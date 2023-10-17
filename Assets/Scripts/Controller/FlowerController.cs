@@ -52,8 +52,6 @@ public class FlowerController : MonoBehaviour
                 isAnyFanHit = false;
                 for (int i = 0; i < 5; i++)
                     isAnyFanHit |= fan[i].isFanHit;
-                Debug.Log(isAnyFanHit);
-
                 if (isAnyFanHit)
                 {
                     if (fan[fanNum[fanCount]].isFanHit)
@@ -71,7 +69,7 @@ public class FlowerController : MonoBehaviour
                     else
                         flowerStatus = FlowerStatusType.Idle;
                 }
-                if (time > 25)
+                if (time > 2.5f)
                 {
                     flowerStatus = FlowerStatusType.Idle;
                     time = 0;

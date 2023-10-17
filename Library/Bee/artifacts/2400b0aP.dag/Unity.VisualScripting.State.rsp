@@ -103,7 +103,6 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
--define:ROS2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
@@ -318,8 +317,6 @@
 -r:"Assets/Ros2ForUnity/Plugins/trajectory_msgs_assembly.dll"
 -r:"Assets/Ros2ForUnity/Plugins/unique_identifier_msgs_assembly.dll"
 -r:"Assets/Ros2ForUnity/Plugins/visualization_msgs_assembly.dll"
--r:"Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/AOT/Newtonsoft.Json.dll"
--r:"Library/PackageCache/com.unity.robotics.urdf-importer@90f353e435/Runtime/UnityMeshImporter/Plugins/AssimpNet/AssimpNet.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/2400b0aP.dag/Unity.VisualScripting.Core.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aP.dag/Unity.VisualScripting.Flow.ref.dll"

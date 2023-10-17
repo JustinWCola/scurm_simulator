@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class LightController : MonoBehaviour
 {
-    private MeshRenderer light;
+    private MeshRenderer lightRenderer;
     // Start is called before the first frame update
     private void Start()
     {
-        light = GetComponent<MeshRenderer>();
+        lightRenderer = GetComponent<MeshRenderer>();
     }
     // Update is called once per frame
     private void Update()
@@ -21,16 +21,16 @@ public class LightController : MonoBehaviour
         float blinkTime = 0.0f;
         blinkTime += Time.deltaTime;
         if (blinkTime % 1 > 0.2f)
-            light.enabled = false;
+            lightRenderer.enabled = false;
         else
-            light.enabled = true;
+            lightRenderer.enabled = true;
     }
     public void TurnOn()
     {
-        light.enabled = true;
+        lightRenderer.enabled = true;
     }
     public void TurnOff()
     {
-        light.enabled = false;
+        lightRenderer.enabled = false;
     }
 }

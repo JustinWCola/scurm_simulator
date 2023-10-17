@@ -32,7 +32,7 @@ public class SpinController : MonoBehaviour
             transform.Rotate(0, 0, SinusoidalSpin());
 
         //暂时键盘控制
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.X))
             SinReset();
         if (Input.GetKeyDown(KeyCode.Q))
         {

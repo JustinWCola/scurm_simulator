@@ -7,7 +7,7 @@ public class ArmorController : MonoBehaviour
 {
     private bool isArmorHit;
     private Collider armor;
-    public LightController light;
+    public LightController armorLight;
     // Start is called before the first frame update
     private void Start()
     {
@@ -18,7 +18,7 @@ public class ArmorController : MonoBehaviour
     {
         if (isArmorHit)
         {
-            light.Blink();
+            armorLight.Blink();
             isArmorHit = false;
         }
     }

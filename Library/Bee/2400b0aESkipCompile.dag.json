@@ -24,7 +24,7 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "BuildPlayerDataGenerator TypeDb-All",
-      "Action": "\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/action_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/actionlib_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/builtin_interfaces_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/composition_interfaces_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/diagnostic_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/example_interfaces_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/geometry_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/lifecycle_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/nav_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/rcl_interfaces_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/ros2cs_common.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/ros2cs_core.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/rosgraph_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/sensor_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/shape_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/statistics_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/std_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/std_srvs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/stereo_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/test_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/tf2_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/trajectory_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/unique_identifier_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/visualization_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Assembly-CSharp.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Robotics.UrdfImporter.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Analytics.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Configuration.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Device.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Environments.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Environments.Internal.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Internal.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Networking.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Registration.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Scheduler.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Telemetry.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Services.Core.Threading.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Timeline.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.VisualScripting.State.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/UnityEngine.Advertisements.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/UnityEngine.TestRunner.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/UnityEngine.UI.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/vhacd.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.analytics@3.8.1/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.analytics@3.8.1/Unity.Analytics.Editor.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.analytics@3.8.1/Unity.Analytics.Tracker.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.robotics.urdf-importer@90f353e435/Runtime/UnityMeshImporter/Plugins/AssimpNet/AssimpNet.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed/UnityEngine\" -s=\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/NetStandard/Extensions/2.0.0\" -s=\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/NetStandard/ref/2.1.0\" -s=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.analytics@3.8.1\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.analytics@3.8.1/AnalyticsStandardEvents\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.robotics.urdf-importer@90f353e435/Runtime/UnityMeshImporter/Plugins/AssimpNet\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/netcorerun/netcorerun\" \"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/action_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/actionlib_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/builtin_interfaces_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/composition_interfaces_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/diagnostic_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/example_interfaces_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/geometry_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/lifecycle_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/nav_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/rcl_interfaces_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/ros2cs_common.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/ros2cs_core.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/rosgraph_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/sensor_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/shape_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/statistics_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/std_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/std_srvs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/stereo_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/test_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/tf2_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/trajectory_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/unique_identifier_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins/visualization_msgs_assembly.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Assembly-CSharp.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.TextMeshPro.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.Timeline.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/Unity.VisualScripting.State.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/UnityEngine.TestRunner.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies/UnityEngine.UI.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll\" -a=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed/UnityEngine\" -s=\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx\" -s=\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard\" -s=\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/NetStandard/Extensions/2.0.0\" -s=\"/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/NetStandard/ref/2.1.0\" -s=\"/home/justinwcola/24FullProcessSimulator/Assets/Ros2ForUnity/Plugins\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/ScriptAssemblies\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator\" -s=\"/home/justinwcola/24FullProcessSimulator/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/netcorerun/netcorerun",
         "/home/justinwcola/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -53,35 +53,17 @@
         "Assets/Ros2ForUnity/Plugins/unique_identifier_msgs_assembly.dll",
         "Assets/Ros2ForUnity/Plugins/visualization_msgs_assembly.dll",
         "Library/ScriptAssemblies/Assembly-CSharp.dll",
-        "Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll",
-        "Library/ScriptAssemblies/Unity.Robotics.UrdfImporter.dll",
-        "Library/ScriptAssemblies/Unity.Services.Analytics.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Configuration.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Device.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Environments.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Environments.Internal.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Internal.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Networking.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Registration.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Scheduler.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Telemetry.dll",
-        "Library/ScriptAssemblies/Unity.Services.Core.Threading.dll",
+        "Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll",
+        "Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll",
+        "Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
+        "Library/ScriptAssemblies/Unity.TextMeshPro.dll",
         "Library/ScriptAssemblies/Unity.Timeline.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.Core.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.State.dll",
-        "Library/ScriptAssemblies/UnityEngine.Advertisements.dll",
         "Library/ScriptAssemblies/UnityEngine.TestRunner.dll",
         "Library/ScriptAssemblies/UnityEngine.UI.dll",
-        "Library/ScriptAssemblies/vhacd.dll",
-        "Library/PackageCache/com.unity.analytics@3.8.1/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll",
-        "Library/PackageCache/com.unity.analytics@3.8.1/Unity.Analytics.Editor.dll",
-        "Library/PackageCache/com.unity.analytics@3.8.1/Unity.Analytics.Tracker.dll",
         "Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll",
-        "Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll",
-        "Library/PackageCache/com.unity.robotics.urdf-importer@90f353e435/Runtime/UnityMeshImporter/Plugins/AssimpNet/AssimpNet.dll",
         "Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll",
         "Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
@@ -292,22 +274,7 @@
       "File": "Library/Bee/2400b0aESkipCompile-inputdata.json"
     },
     {
-      "File": "Library/PackageCache/com.unity.analytics@3.8.1/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll"
-    },
-    {
-      "File": "Library/PackageCache/com.unity.analytics@3.8.1/Unity.Analytics.Editor.dll"
-    },
-    {
-      "File": "Library/PackageCache/com.unity.analytics@3.8.1/Unity.Analytics.Tracker.dll"
-    },
-    {
       "File": "Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
-    },
-    {
-      "File": "Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/Newtonsoft.Json.dll"
-    },
-    {
-      "File": "Library/PackageCache/com.unity.robotics.urdf-importer@90f353e435/Runtime/UnityMeshImporter/Plugins/AssimpNet/AssimpNet.dll"
     },
     {
       "File": "Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll"
@@ -319,49 +286,16 @@
       "File": "Library/ScriptAssemblies/Assembly-CSharp.dll"
     },
     {
-      "File": "Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll"
+      "File": "Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll"
     },
     {
-      "File": "Library/ScriptAssemblies/Unity.Robotics.UrdfImporter.dll"
+      "File": "Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll"
     },
     {
-      "File": "Library/ScriptAssemblies/Unity.Services.Analytics.dll"
+      "File": "Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll"
     },
     {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Analytics.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Configuration.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Device.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Environments.Internal.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Environments.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Internal.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Networking.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Registration.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Scheduler.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Telemetry.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.Threading.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/Unity.Services.Core.dll"
+      "File": "Library/ScriptAssemblies/Unity.TextMeshPro.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Timeline.dll"
@@ -376,16 +310,10 @@
       "File": "Library/ScriptAssemblies/Unity.VisualScripting.State.dll"
     },
     {
-      "File": "Library/ScriptAssemblies/UnityEngine.Advertisements.dll"
-    },
-    {
       "File": "Library/ScriptAssemblies/UnityEngine.TestRunner.dll"
     },
     {
       "File": "Library/ScriptAssemblies/UnityEngine.UI.dll"
-    },
-    {
-      "File": "Library/ScriptAssemblies/vhacd.dll"
     }
   ],
   "GlobSignatures": [
