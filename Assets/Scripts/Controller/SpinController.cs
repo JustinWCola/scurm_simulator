@@ -25,7 +25,7 @@ public class SpinController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         time += Time.fixedDeltaTime;
         if (isSpin)
