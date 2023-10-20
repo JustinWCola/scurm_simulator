@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ROS2;
+using UnityEngine.Rendering;
+using System.Runtime.InteropServices;
+using Unity.Collections;
+using Unity.VisualScripting;
 
 public class ROS2CamPublisher : MonoBehaviour
 {
@@ -13,9 +17,11 @@ public class ROS2CamPublisher : MonoBehaviour
     private Camera cam;
     private RenderTexture rt;
     private Texture2D img;
+    private AsyncGPUReadbackRequest req;
+    private byte[] imgData;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         ros2Unity = new ROS2UnityCore();
         cam = GetComponent<Camera>();
@@ -36,9 +42,8 @@ public class ROS2CamPublisher : MonoBehaviour
         camInfo.K[8] = 1;
         camInfo.D = new double[5];
     }
-
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (!ros2Unity.Ok())
             return;
@@ -49,14 +54,14 @@ public class ROS2CamPublisher : MonoBehaviour
             camImagePub = ros2Node.CreateSensorPublisher<sensor_msgs.msg.Image>("/image_raw");
             camInfoPub = ros2Node.CreateSensorPublisher<sensor_msgs.msg.CameraInfo>("/camera_info");
         }
-
         //获取时间戳
         var timestamp = new builtin_interfaces.msg.Time();
         ros2Node.clock.UpdateROSClockTime(timestamp);
 
         //获取图像
-        img = RTImage(cam);
-        img = VerticalFlipTexture(img);
+        Graphics.Blit(cam.targetTexture, rt, new Vector2(1, -1), new Vector2(0, 1));
+        AsyncGPUReadback.Request(rt, 0, TextureFormat.RGB24, OnCompleteReadback);
+        req.WaitForCompletion();
 
         //转换为ROS2数据包
         var msg = new sensor_msgs.msg.Image();
@@ -66,7 +71,7 @@ public class ROS2CamPublisher : MonoBehaviour
         msg.Width = (uint)rt.width;
         msg.Encoding = "rgb8";
         msg.Step = (uint)(rt.width * 3);
-        msg.Data = Rgba2Rgb(img.GetRawTextureData<byte>().ToArray());
+        msg.Data = imgData;
 
         //更新时间戳
         camInfo.Header = msg.Header;
@@ -75,54 +80,10 @@ public class ROS2CamPublisher : MonoBehaviour
         camImagePub.Publish(msg);
         camInfoPub.Publish(camInfo);
     }
-    //相机截屏为2D材质
-    private Texture2D RTImage(Camera camera)
+    void OnCompleteReadback(AsyncGPUReadbackRequest req)
     {
-        RenderTexture renderTexture = new RenderTexture(camera.pixelWidth, camera.pixelHeight, 0);
-
-        //设置渲染目标
-        camera.targetTexture = renderTexture;
-        //渲染相机
-        camera.Render();
-        //恢复渲染目标为默认值
-        camera.targetTexture = null;
-
-        RenderTexture.active = renderTexture;
-
-        //读取图像
-        Texture2D image = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.RGBA32, false);
-        image.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
-        image.Apply();
-
-        RenderTexture.active = null;
-        return image;
-    }
-    // 垂直翻转
-    public static Texture2D VerticalFlipTexture(Texture2D texture)
-    {
-        //得到图片的宽高
-        int width = texture.width;
-        int height = texture.height;
-
-        Texture2D flipTexture = new Texture2D(width, height, TextureFormat.RGBA32, false);
-        for (int i = 0; i < height; i++)
-        {
-            flipTexture.SetPixels(0, i, width, 1, texture.GetPixels(0, height - i - 1, width, 1));
-        }
-        flipTexture.Apply();
-        return flipTexture;
-    }
-
-    //RGBA转RGB，丢失Alpha通道
-    private byte[] Rgba2Rgb(byte[] rgba)
-    {
-        var rgb = new byte[rgba.Length / 4 * 3];
-        for (int i = 0; i < rgba.Length / 4; i++)
-        {
-            rgb[i * 3] = rgba[i * 4];
-            rgb[i * 3 + 1] = rgba[i * 4 + 1];
-            rgb[i * 3 + 2] = rgba[i * 4 + 2];
-        }
-        return rgb;
+        if (req.hasError)
+            return;
+        imgData = req.GetData<byte>().ToArray();
     }
 }
