@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using ROS2;
 using UnityEngine.Rendering;
-using System.Runtime.InteropServices;
-using Unity.Collections;
-using Unity.VisualScripting;
 
 public class ROS2CamPublisher : MonoBehaviour
 {

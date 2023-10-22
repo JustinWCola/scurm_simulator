@@ -19,13 +19,13 @@ public class SpinController : MonoBehaviour
     public bool isSpin;
     private float a, w, b, time;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         SinReset();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         time += Time.fixedDeltaTime;
         if (isSpin)

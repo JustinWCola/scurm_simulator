@@ -1,9 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UIElements;
 
 public class FlowerController : MonoBehaviour
 {
@@ -21,13 +18,13 @@ public class FlowerController : MonoBehaviour
     public FanController[] fan;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         fanNum = new int[5];
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         time += Time.deltaTime;
         switch (flowerStatus)
@@ -43,9 +40,11 @@ public class FlowerController : MonoBehaviour
                 else
                 {
                     for (int i = 0; i < 5; i++)
-                        fan[i].fanStatus = 0;
+                    {
+                        fan[i].fanStatus = FanController.FanStatusType.Off;
+                        fan[i].isFanHit = false;
+                    }
                 }
-
                 break;
             case FlowerStatusType.Attack:
                 fan[fanNum[fanCount]].fanStatus = FanController.FanStatusType.Ready;
@@ -57,6 +56,7 @@ public class FlowerController : MonoBehaviour
                     if (fan[fanNum[fanCount]].isFanHit)
                     {
                         fan[fanNum[fanCount]].fanStatus = FanController.FanStatusType.On;
+                        fan[fanNum[fanCount]].isFanHit = false;
                         fanCount++;
                         if (fanCount == 5)
                         {
@@ -64,7 +64,6 @@ public class FlowerController : MonoBehaviour
                             flowerStatus = FlowerStatusType.Finish;
                         }
                         time = 0;
-                        break;
                     }
                     else
                         flowerStatus = FlowerStatusType.Idle;
@@ -76,16 +75,16 @@ public class FlowerController : MonoBehaviour
                 }
                 break;
             case FlowerStatusType.Finish:
-                if (time > 3.0f)
+                isAnyFanHit = false;
+                for (int i = 0; i < 5; i++)
+                    isAnyFanHit |= fan[i].isFanHit;
+                if (time > 3.0f || isAnyFanHit)
                 {
                     flowerStatus = FlowerStatusType.Idle;
                     time = 0;
                 }
                 break;
         }
-        //目前采用按键触发，后续改为碰撞检测
-        if (Input.GetKeyDown(KeyCode.Space))
-            fan[fanNum[fanCount]].isFanHit = true;
     }
     private int[] RandomNum(int min, int max)
     {

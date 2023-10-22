@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ROS2;
-using Unity.VisualScripting;
 
 public class ROS2OffsetSubscriber : MonoBehaviour
 {
     private ROS2UnityCore ros2Unity;
     private ROS2Node ros2Node;
     private ISubscription<sensor_msgs.msg.JointState> offsetSub;
-
-    private Vector3 offset;
+    public Vector3 offset;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,8 +26,6 @@ public class ROS2OffsetSubscriber : MonoBehaviour
             ros2Node = ros2Unity.CreateNode("ROS2UnityOffsetNode");
             offsetSub = ros2Node.CreateSubscription<sensor_msgs.msg.JointState>("/offset", msg => OffsetCallback(msg));
         }
-
-        transform.Rotate(offset);
     }
     private void OffsetCallback(sensor_msgs.msg.JointState msg)
     {

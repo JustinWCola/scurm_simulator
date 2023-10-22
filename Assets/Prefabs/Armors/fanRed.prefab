@@ -114,7 +114,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 5121663720040913010}
   - component: {fileID: 5132615273438749885}
   - component: {fileID: 7472947973771703002}
+  - component: {fileID: 1560273711809595174}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -238,6 +239,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7128009015902420708, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
+--- !u!114 &1560273711809595174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369506993381978592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845c88476f2633d59a21666c207fff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fan: {fileID: 4701345830779643763}
+  ringNum: 10
 --- !u!1 &1437451078006144623
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,6 +266,7 @@ GameObject:
   - component: {fileID: 493166523410476146}
   - component: {fileID: 3777425258124007399}
   - component: {fileID: 8227240472000981205}
+  - component: {fileID: 2731522490225760271}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -357,6 +373,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5706419574352461207, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
+--- !u!114 &2731522490225760271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437451078006144623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845c88476f2633d59a21666c207fff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fan: {fileID: 4701345830779643763}
+  ringNum: 7
 --- !u!1 &1446852690073852144
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +399,7 @@ GameObject:
   - component: {fileID: 860565173715051233}
   - component: {fileID: 6009936955867215001}
   - component: {fileID: 4701345830779643763}
+  - component: {fileID: 6167246492184396713}
   m_Layer: 0
   m_Name: fanRed
   m_TagString: Untagged
@@ -469,33 +500,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fanStatus: 0
   isFanHit: 0
-  ring:
-  - {fileID: 7472947973771703002}
-  - {fileID: 5743553188603179218}
-  - {fileID: 7088817877072187053}
-  - {fileID: 8227240472000981205}
-  - {fileID: 4069091387559584495}
-  - {fileID: 8682035630443429069}
-  - {fileID: 2820045580854537463}
-  - {fileID: 2369456310425228590}
-  - {fileID: 2511285389324162627}
-  - {fileID: 1242672019180005146}
+  ringNum: 0
   fanLight:
   - {fileID: 1173683203455301143}
   - {fileID: 3035394881749870870}
   - {fileID: 2989830731301601590}
   - {fileID: 1739821932161832829}
   ringLight:
-  - {fileID: 5132615273438749885}
-  - {fileID: 2101412116703255999}
-  - {fileID: 4546683608701000657}
-  - {fileID: 3777425258124007399}
-  - {fileID: 6598415299268282205}
-  - {fileID: 4953589742513768599}
-  - {fileID: 8596532520080793540}
-  - {fileID: 2606544209070328740}
-  - {fileID: 5559595603768206753}
   - {fileID: 6439599501472316628}
+  - {fileID: 5559595603768206753}
+  - {fileID: 2606544209070328740}
+  - {fileID: 8596532520080793540}
+  - {fileID: 4953589742513768599}
+  - {fileID: 6598415299268282205}
+  - {fileID: 3777425258124007399}
+  - {fileID: 4546683608701000657}
+  - {fileID: 2101412116703255999}
+  - {fileID: 5132615273438749885}
+--- !u!64 &6167246492184396713
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446852690073852144}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5868229899989633049, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
 --- !u!1 &1958843578105969969
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +552,7 @@ GameObject:
   - component: {fileID: 1044788876949175034}
   - component: {fileID: 8596532520080793540}
   - component: {fileID: 2820045580854537463}
+  - component: {fileID: 8654907726523644245}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -615,6 +659,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6201675183630255493, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
+--- !u!114 &8654907726523644245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958843578105969969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845c88476f2633d59a21666c207fff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fan: {fileID: 4701345830779643763}
+  ringNum: 4
 --- !u!1 &2795306191980587849
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +686,7 @@ GameObject:
   - component: {fileID: 7288813660115328198}
   - component: {fileID: 4953589742513768599}
   - component: {fileID: 8682035630443429069}
+  - component: {fileID: 8625692767888502897}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -734,6 +793,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2953330171998713373, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
+--- !u!114 &8625692767888502897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2795306191980587849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845c88476f2633d59a21666c207fff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fan: {fileID: 4701345830779643763}
+  ringNum: 5
 --- !u!1 &2953366575847923344
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,7 +921,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -866,6 +939,7 @@ GameObject:
   - component: {fileID: 8090283677478048275}
   - component: {fileID: 5559595603768206753}
   - component: {fileID: 2511285389324162627}
+  - component: {fileID: 186457289721415894}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -972,6 +1046,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7948954710455908890, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
+--- !u!114 &186457289721415894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4184015329176911052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845c88476f2633d59a21666c207fff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fan: {fileID: 4701345830779643763}
+  ringNum: 2
 --- !u!1 &4480819092674654107
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,6 +1073,7 @@ GameObject:
   - component: {fileID: 2216874051920548231}
   - component: {fileID: 6598415299268282205}
   - component: {fileID: 4069091387559584495}
+  - component: {fileID: 28290528518959197}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -1091,6 +1180,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -200000641474694754, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
+--- !u!114 &28290528518959197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480819092674654107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845c88476f2633d59a21666c207fff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fan: {fileID: 4701345830779643763}
+  ringNum: 6
 --- !u!1 &4486897512488899374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,7 +1244,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4486897512488899374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1223,6 +1326,7 @@ GameObject:
   - component: {fileID: 2759524281456685429}
   - component: {fileID: 4546683608701000657}
   - component: {fileID: 7088817877072187053}
+  - component: {fileID: 2969516529184090479}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -1329,6 +1433,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3050240214545751684, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
+--- !u!114 &2969516529184090479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4832213356097777944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845c88476f2633d59a21666c207fff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fan: {fileID: 4701345830779643763}
+  ringNum: 8
 --- !u!1 &6590940638725134304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1561,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -1461,6 +1579,7 @@ GameObject:
   - component: {fileID: 5118271636242389751}
   - component: {fileID: 2101412116703255999}
   - component: {fileID: 5743553188603179218}
+  - component: {fileID: 3687844774630987970}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -1567,6 +1686,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7942142499322852117, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
+--- !u!114 &3687844774630987970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7437756530327035725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845c88476f2633d59a21666c207fff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fan: {fileID: 4701345830779643763}
+  ringNum: 9
 --- !u!1 &7541771956335665531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1713,7 @@ GameObject:
   - component: {fileID: 1259642249606094353}
   - component: {fileID: 2606544209070328740}
   - component: {fileID: 2369456310425228590}
+  - component: {fileID: 4940741395701081429}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -1686,6 +1820,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -273832666106960916, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
+--- !u!114 &4940741395701081429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541771956335665531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845c88476f2633d59a21666c207fff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fan: {fileID: 4701345830779643763}
+  ringNum: 3
 --- !u!1 &8733351178742674308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,6 +1847,7 @@ GameObject:
   - component: {fileID: 548170855229784315}
   - component: {fileID: 6439599501472316628}
   - component: {fileID: 1242672019180005146}
+  - component: {fileID: 3690137585297213351}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -1805,3 +1954,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1351346491622859656, guid: e0f7ab3248e08654ca8b97914bdf9674, type: 3}
+--- !u!114 &3690137585297213351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8733351178742674308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1845c88476f2633d59a21666c207fff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fan: {fileID: 4701345830779643763}
+  ringNum: 1
