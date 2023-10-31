@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/RMUC2023.unity
+- path: Assets/Scenes/RMUC.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -58,3 +58,22 @@ The following packages were added:
   com.unity.test-framework@1.1.33
   com.unity.xr.legacyinputhelpers@2.1.10
   com.unity.ai.navigation@1.1.4
+
+=== Sun Oct 29 14:45:21 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.collab-proxy from version 2.0.7 to 2.2.0
+  com.unity.shadergraph from version 14.0.8 to 14.0.9
+  com.unity.timeline from version 1.7.5 to 1.7.6
+  com.unity.visualscripting from version 1.9.0 to 1.9.1
+
+=== Mon Oct 30 17:34:59 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.postprocessing from version 2.3.0 to 3.2.2

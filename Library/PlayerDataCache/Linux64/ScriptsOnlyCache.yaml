@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BulletController
+    - DistanceMeasure
     - FanController
     - FlowerController
     - GimbalController
@@ -8,7 +10,30 @@ ScriptsOnlyBuild:
     - ROS2CamPublisher
     - ROS2ImuPublisher
     - ROS2OffsetSubscriber
+    - RingController
+    - ShootController
+    - SlimUI.ModernMenu.CheckMusicVolume
+    - SlimUI.ModernMenu.ThemedUIData
+    - SlimUI.ModernMenu.ThemedUIElement
+    - SlimUI.ModernMenu.UIMenuManager
+    - SlimUI.ModernMenu.UISettingsManager
     - SpinController
+    Unity.Postprocessing.Runtime.dll:
+    - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
+    - UnityEngine.Rendering.PostProcessing.AutoExposure
+    - UnityEngine.Rendering.PostProcessing.Bloom
+    - UnityEngine.Rendering.PostProcessing.ChromaticAberration
+    - UnityEngine.Rendering.PostProcessing.ColorGrading
+    - UnityEngine.Rendering.PostProcessing.DepthOfField
+    - UnityEngine.Rendering.PostProcessing.Grain
+    - UnityEngine.Rendering.PostProcessing.LensDistortion
+    - UnityEngine.Rendering.PostProcessing.MotionBlur
+    - UnityEngine.Rendering.PostProcessing.PostProcessLayer
+    - UnityEngine.Rendering.PostProcessing.PostProcessProfile
+    - UnityEngine.Rendering.PostProcessing.PostProcessResources
+    - UnityEngine.Rendering.PostProcessing.PostProcessVolume
+    - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
+    - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.RenderPipelines.Core.Runtime:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -44,6 +69,18 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.UI.UIFoldout
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -63,14 +100,68 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
+    Assembly-CSharp:
+    - SlimUI.ModernMenu.ThemedUIData/Custom1
+    - SlimUI.ModernMenu.ThemedUIData/Custom2
+    - SlimUI.ModernMenu.ThemedUIData/Custom3
+    Unity.Postprocessing.Runtime:
+    - UnityEngine.Rendering.PostProcessing.BoolParameter
+    - UnityEngine.Rendering.PostProcessing.ColorParameter
+    - UnityEngine.Rendering.PostProcessing.FastApproximateAntialiasing
+    - UnityEngine.Rendering.PostProcessing.FloatParameter
+    - UnityEngine.Rendering.PostProcessing.Fog
+    - UnityEngine.Rendering.PostProcessing.HistogramMonitor
+    - UnityEngine.Rendering.PostProcessing.LightMeterMonitor
+    - UnityEngine.Rendering.PostProcessing.PostProcessDebugLayer
+    - UnityEngine.Rendering.PostProcessing.PostProcessDebugLayer/OverlaySettings
+    - UnityEngine.Rendering.PostProcessing.PostProcessResources/ComputeShaders
+    - UnityEngine.Rendering.PostProcessing.PostProcessResources/SMAALuts
+    - UnityEngine.Rendering.PostProcessing.PostProcessResources/Shaders
+    - UnityEngine.Rendering.PostProcessing.SubpixelMorphologicalAntialiasing
+    - UnityEngine.Rendering.PostProcessing.TemporalAntialiasing
+    - UnityEngine.Rendering.PostProcessing.TextureParameter
+    - UnityEngine.Rendering.PostProcessing.VectorscopeMonitor
+    - UnityEngine.Rendering.PostProcessing.WaveformMonitor
     Unity.RenderPipelines.Core.Runtime:
     - UnityEngine.Rendering.UI.DebugUIPrefabBundle
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_GlyphAdjustmentRecord
+    - TMPro.TMP_GlyphPairAdjustmentRecord
+    - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
+    - TMPro.VertexGradient
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
     - UnityEngine.RectOffset
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
     - UnityEngine.EventSystems.EventTrigger/Entry
     - UnityEngine.EventSystems.EventTrigger/TriggerEvent
@@ -82,9 +173,40 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.Scrollbar/ScrollEvent
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: SlimUI.ModernMenu.UIMenuManager
+    methodName: PlayHover
+  - assembly: Assembly-CSharp
+    fullTypeName: SlimUI.ModernMenu.UIMenuManager
+    methodName: Position2
+  - assembly: Assembly-CSharp
+    fullTypeName: SlimUI.ModernMenu.UIMenuManager
+    methodName: ReturnMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: SlimUI.ModernMenu.UIMenuManager
+    methodName: PlayHover
+  - assembly: Assembly-CSharp
+    fullTypeName: SlimUI.ModernMenu.UIMenuManager
+    methodName: LoadScene
+  - assembly: Assembly-CSharp
+    fullTypeName: SlimUI.ModernMenu.UIMenuManager
+    methodName: PlayHover
+  - assembly: Assembly-CSharp
+    fullTypeName: SlimUI.ModernMenu.UIMenuManager
+    methodName: LoadScene
+  - assembly: Assembly-CSharp
+    fullTypeName: SlimUI.ModernMenu.UIMenuManager
+    methodName: PlayHover
+  - assembly: Assembly-CSharp
+    fullTypeName: SlimUI.ModernMenu.UIMenuManager
+    methodName: AreYouSure
+  - assembly: Assembly-CSharp
+    fullTypeName: SlimUI.ModernMenu.UIMenuManager
+    methodName: PlayCampaign
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: OnScrollbarClicked
@@ -125,7 +247,194 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
   sceneClasses:
-    Assets/Scenes/RMUC2023.unity:
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 72
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1692}
+    - Class: 114
+      Script: {instanceID: 1694}
+    - Class: 114
+      Script: {instanceID: 1696}
+    - Class: 114
+      Script: {instanceID: 1698}
+    - Class: 114
+      Script: {instanceID: 1700}
+    - Class: 114
+      Script: {instanceID: 1702}
+    - Class: 114
+      Script: {instanceID: 1714}
+    - Class: 114
+      Script: {instanceID: 1778}
+    - Class: 114
+      Script: {instanceID: 1962}
+    - Class: 114
+      Script: {instanceID: 1994}
+    - Class: 114
+      Script: {instanceID: 2578}
+    - Class: 114
+      Script: {instanceID: 2720}
+    - Class: 114
+      Script: {instanceID: 2824}
+    - Class: 114
+      Script: {instanceID: 2956}
+    - Class: 114
+      Script: {instanceID: 3056}
+    - Class: 114
+      Script: {instanceID: 3108}
+    - Class: 114
+      Script: {instanceID: 3440}
+    - Class: 114
+      Script: {instanceID: 3618}
+    - Class: 114
+      Script: {instanceID: 3778}
+    - Class: 114
+      Script: {instanceID: 4544}
+    - Class: 114
+      Script: {instanceID: 4672}
+    - Class: 114
+      Script: {instanceID: 4922}
+    - Class: 114
+      Script: {instanceID: 4990}
+    - Class: 114
+      Script: {instanceID: 5020}
+    - Class: 114
+      Script: {instanceID: 5032}
+    - Class: 114
+      Script: {instanceID: 5098}
+    - Class: 114
+      Script: {instanceID: 5584}
+    - Class: 114
+      Script: {instanceID: 5760}
+    - Class: 114
+      Script: {instanceID: 5984}
+    - Class: 114
+      Script: {instanceID: 6238}
+    - Class: 114
+      Script: {instanceID: 6384}
+    - Class: 114
+      Script: {instanceID: 6818}
+    - Class: 114
+      Script: {instanceID: 7054}
+    - Class: 114
+      Script: {instanceID: 7268}
+    - Class: 114
+      Script: {instanceID: 7344}
+    - Class: 114
+      Script: {instanceID: 7400}
+    - Class: 114
+      Script: {instanceID: 7428}
+    - Class: 114
+      Script: {instanceID: 7462}
+    - Class: 114
+      Script: {instanceID: 7548}
+    - Class: 114
+      Script: {instanceID: 7560}
+    - Class: 114
+      Script: {instanceID: 7866}
+    - Class: 114
+      Script: {instanceID: 7870}
+    - Class: 114
+      Script: {instanceID: 7894}
+    - Class: 114
+      Script: {instanceID: 8274}
+    - Class: 114
+      Script: {instanceID: 8696}
+    - Class: 114
+      Script: {instanceID: 8708}
+    - Class: 114
+      Script: {instanceID: 8810}
+    - Class: 114
+      Script: {instanceID: 8818}
+    - Class: 114
+      Script: {instanceID: 8996}
+    - Class: 114
+      Script: {instanceID: 9048}
+    - Class: 114
+      Script: {instanceID: 9118}
+    - Class: 114
+      Script: {instanceID: 9180}
+    - Class: 114
+      Script: {instanceID: 9234}
+    - Class: 114
+      Script: {instanceID: 9256}
+    - Class: 114
+      Script: {instanceID: 9262}
+    - Class: 114
+      Script: {instanceID: 9410}
+    - Class: 114
+      Script: {instanceID: 9604}
+    - Class: 114
+      Script: {instanceID: 9796}
+    - Class: 114
+      Script: {instanceID: 9852}
+    - Class: 114
+      Script: {instanceID: 9888}
+    - Class: 114
+      Script: {instanceID: 10350}
+    - Class: 114
+      Script: {instanceID: 10844}
+    - Class: 114
+      Script: {instanceID: 11308}
+    - Class: 114
+      Script: {instanceID: 11736}
+    - Class: 114
+      Script: {instanceID: 11800}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    Assets/Scenes/RMUC.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -144,137 +453,71 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
-    - Class: 81
+    - Class: 72
       Script: {instanceID: 0}
-    - Class: 82
+    - Class: 81
       Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
     - Class: 95
+      Script: {instanceID: 0}
+    - Class: 96
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 1778}
     - Class: 114
-      Script: {instanceID: 1628}
+      Script: {instanceID: 2608}
     - Class: 114
-      Script: {instanceID: 1630}
+      Script: {instanceID: 3056}
     - Class: 114
-      Script: {instanceID: 1632}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 1634}
+      Script: {instanceID: 3578}
     - Class: 114
-      Script: {instanceID: 1636}
+      Script: {instanceID: 3702}
     - Class: 114
-      Script: {instanceID: 1648}
+      Script: {instanceID: 3910}
     - Class: 114
-      Script: {instanceID: 1712}
+      Script: {instanceID: 4074}
     - Class: 114
-      Script: {instanceID: 1922}
+      Script: {instanceID: 4246}
     - Class: 114
-      Script: {instanceID: 2492}
+      Script: {instanceID: 4326}
     - Class: 114
-      Script: {instanceID: 2522}
+      Script: {instanceID: 5032}
     - Class: 114
-      Script: {instanceID: 2730}
+      Script: {instanceID: 5184}
     - Class: 114
-      Script: {instanceID: 2858}
-    - Class: 114
-      Script: {instanceID: 2996}
-    - Class: 114
-      Script: {instanceID: 3000}
-    - Class: 114
-      Script: {instanceID: 3462}
-    - Class: 114
-      Script: {instanceID: 3500}
-    - Class: 114
-      Script: {instanceID: 3656}
-    - Class: 114
-      Script: {instanceID: 3786}
-    - Class: 114
-      Script: {instanceID: 4108}
-    - Class: 114
-      Script: {instanceID: 4184}
-    - Class: 114
-      Script: {instanceID: 4400}
-    - Class: 114
-      Script: {instanceID: 4524}
-    - Class: 114
-      Script: {instanceID: 4772}
-    - Class: 114
-      Script: {instanceID: 4838}
-    - Class: 114
-      Script: {instanceID: 4942}
-    - Class: 114
-      Script: {instanceID: 5024}
-    - Class: 114
-      Script: {instanceID: 5412}
-    - Class: 114
-      Script: {instanceID: 5578}
-    - Class: 114
-      Script: {instanceID: 6050}
+      Script: {instanceID: 6818}
     - Class: 114
       Script: {instanceID: 7054}
     - Class: 114
-      Script: {instanceID: 7126}
+      Script: {instanceID: 7548}
     - Class: 114
-      Script: {instanceID: 7242}
+      Script: {instanceID: 8708}
     - Class: 114
-      Script: {instanceID: 7336}
+      Script: {instanceID: 10824}
     - Class: 114
-      Script: {instanceID: 7636}
+      Script: {instanceID: 10844}
     - Class: 114
-      Script: {instanceID: 7640}
+      Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 7664}
-    - Class: 114
-      Script: {instanceID: 8038}
-    - Class: 114
-      Script: {instanceID: 8454}
-    - Class: 114
-      Script: {instanceID: 8568}
-    - Class: 114
-      Script: {instanceID: 8576}
-    - Class: 114
-      Script: {instanceID: 8754}
-    - Class: 114
-      Script: {instanceID: 8806}
-    - Class: 114
-      Script: {instanceID: 8876}
-    - Class: 114
-      Script: {instanceID: 9008}
-    - Class: 114
-      Script: {instanceID: 9158}
-    - Class: 114
-      Script: {instanceID: 9352}
-    - Class: 114
-      Script: {instanceID: 9542}
-    - Class: 114
-      Script: {instanceID: 9598}
-    - Class: 114
-      Script: {instanceID: 9634}
-    - Class: 114
-      Script: {instanceID: 10090}
-    - Class: 114
-      Script: {instanceID: 11024}
-    - Class: 114
-      Script: {instanceID: 11378}
-    - Class: 114
-      Script: {instanceID: 11442}
+      Script: {instanceID: 77962}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -367,10 +610,22 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: a28c001cbb24f1b6b9e70e7b4c98c0fa
+    assemblyName: Assembly-CSharp
+    namespaceName: SlimUI.ModernMenu
+    className: UISettingsManager
+  - hash:
+      serializedVersion: 2
       Hash: 94f8303fca6ba25383fc62595e324b7b
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: df4f4f182005df0a58099506d634cbdb
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Grain
   - hash:
       serializedVersion: 2
       Hash: 1ed2c6278a809fcb97c4b0e845bbecc5
@@ -392,6 +647,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: SlimUI.ModernMenu
+    className: CheckSFXVolume
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseExitMessageListener
@@ -409,7 +670,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerObjectPopupField
   - hash:
       serializedVersion: 2
-      Hash: b5dab79f681cbfd40f8b671cbc6e035f
+      Hash: 7e03632c95477988341652c4a3296e67
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FanController
@@ -477,11 +738,23 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
+    namespaceName: SlimUI.ModernMenu
+    className: ResetDemo
+  - hash:
+      serializedVersion: 2
+      Hash: fc4b10d676d5a5aae087dfc9c7748857
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessLayer
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
     namespaceName: ROS2
     className: ROS2UnityComponent
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 702175d086d710aac796f4ab5fe280df
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ROS2OffsetSubscriber
@@ -565,10 +838,22 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerWidget
   - hash:
       serializedVersion: 2
+      Hash: 9cc5105fe7a9e159905fce1baaf3ab17
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RingController
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: CoroutineRunner
+  - hash:
+      serializedVersion: 2
+      Hash: aa5adfbcb3c4ed0948c412372aab3263
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ChromaticAberration
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -613,7 +898,7 @@ ScriptsOnlyBuild:
     className: UnityOnButtonClickMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 4ab9e05cb7c9227ed8ffb2ba8cce1e47
+      Hash: a868868fd8d71ab5139eebd4c0514413
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GimbalController
@@ -647,6 +932,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDropdownValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f99b4b380d84ee997b7cf42733b52c70
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ShootController
   - hash:
       serializedVersion: 2
       Hash: 9bc8aea1212507db829bdc640d82ed3a
@@ -683,6 +974,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 843836ad56ce5ef50c83c4db3bf552d1
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: AutoExposure
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -763,6 +1060,12 @@ ScriptsOnlyBuild:
     className: TextMeshPro
   - hash:
       serializedVersion: 2
+      Hash: da4d32f9cd3b02cc835567ea8973a171
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Bloom
+  - hash:
+      serializedVersion: 2
       Hash: c343da5828fddd0a899e69eb0f447fd5
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -799,6 +1102,12 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
+      Hash: 26fccd5563a7e5eda4f90f707cad9915
+    assemblyName: Assembly-CSharp
+    namespaceName: SlimUI.ModernMenu
+    className: ThemedUI
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -815,6 +1124,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ArmorController
+  - hash:
+      serializedVersion: 2
+      Hash: 028131bd57ac77bffd4327ae20c7ca30
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
       Hash: adfcbacf24b05b2f3b60b081fdab21dc
@@ -901,6 +1216,18 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerEnumHistory
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: SlimUI.ModernMenu
+    className: ExtraLinks
+  - hash:
+      serializedVersion: 2
+      Hash: 408293f89d4950546351fcf0e974583f
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: MotionBlur
+  - hash:
+      serializedVersion: 2
       Hash: fcc569162a8d9bd9df34e8c9dee84212
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -919,6 +1246,12 @@ ScriptsOnlyBuild:
     className: ROS2ServiceExample
   - hash:
       serializedVersion: 2
+      Hash: 91fba0a2850ee2dd5a8a1e782bba2e26
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ScreenSpaceReflections
+  - hash:
+      serializedVersion: 2
       Hash: bda7bb16fefdce6ac2b9a4abce1c9087
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering
@@ -929,6 +1262,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerClickMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a774afc2d683a1fb0fa29ecc0d5a6fb5
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessVolume
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -955,10 +1294,22 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: e44c1964aad6fb40563573cf6608be1c
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessResources
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnEndDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 30b47ad88e97c139354d848e6ca2aba6
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: AmbientOcclusion
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1009,6 +1360,12 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: da6ddd4c49d16ae17dd37e98ef6be7d3
+    assemblyName: Assembly-CSharp
+    namespaceName: SlimUI.ModernMenu
+    className: ThemedUIData
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1049,6 +1406,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerIndirectToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 4862508a82e551bebf075a72a1084e27
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Vignette
+  - hash:
+      serializedVersion: 2
+      Hash: 2c11e3687875dd78c091544cf3bccfa3
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: DepthOfField
   - hash:
       serializedVersion: 2
       Hash: 2673f1d0e79e3676f5e46d368d79b12d
@@ -1183,6 +1552,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerBitField
   - hash:
       serializedVersion: 2
+      Hash: eef40a8ce205006a0e5a2ad8bed35d8e
+    assemblyName: Assembly-CSharp
+    namespaceName: SlimUI.ModernMenu
+    className: ThemedUIElement
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1199,6 +1574,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: a552dec247e916ee61dce103baf681ff
+    assemblyName: Assembly-CSharp
+    namespaceName: SlimUI.ModernMenu
+    className: UIMenuManager
   - hash:
       serializedVersion: 2
       Hash: df70afff09fcc26f54fe08084e6042ec
@@ -1399,10 +1780,28 @@ ScriptsOnlyBuild:
     className: LightAnchor
   - hash:
       serializedVersion: 2
+      Hash: e2c80d0b26e7c3cf739d01cbc445174e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BulletController
+  - hash:
+      serializedVersion: 2
       Hash: be140ea01a11255b651c097661ac55b1
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 8a19dad21d969aca0399d1618eb1c727
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessProfile
+  - hash:
+      serializedVersion: 2
+      Hash: 80789df0e1940f5416d1f2e5d39bb34b
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessDebug
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1415,6 +1814,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseOverMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a0c3d8ac0230199d5e0acf6626e72964
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ColorGrading
   - hash:
       serializedVersion: 2
       Hash: 025cd7bab07ecd22938b0166edeab2a5
@@ -1433,6 +1838,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateMachine
+  - hash:
+      serializedVersion: 2
+      Hash: e0959e6b1ac2cd5e8efb65362252ce93
+    assemblyName: Unity.Postprocessing.Runtime
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: LensDistortion
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1463,6 +1874,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerFoldout
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: SlimUI.ModernMenu
+    className: CheckMusicVolume
   - hash:
       serializedVersion: 2
       Hash: afe1800287c9574079eab3fea2622416
@@ -1499,7 +1916,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 045f99cc5741569172ebcd45f2cadf43
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DistanceMeasure
   platform: 24
   scenePathNames:
-  - Assets/Scenes/RMUC2023.unity
+  - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/RMUC.unity
   playerPath: /home/justinwcola/RFSim_Release/RFSim.x86_64
