@@ -35,7 +35,7 @@ MonoBehaviour:
     value: 1
   threshold:
     overrideState: 1
-    value: 0.9
+    value: 1
   softKnee:
     overrideState: 1
     value: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
     overrideState: 1
     value: {r: 4, g: 4, b: 4, a: 1}
   fastMode:
-    overrideState: 0
+    overrideState: 1
     value: 1
   dirtTexture:
     overrideState: 0

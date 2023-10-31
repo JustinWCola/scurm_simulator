@@ -21,41 +21,35 @@ namespace SlimUI.ModernMenu
 		[Tooltip("The Menu for when the EXIT button is clicked")]
 		public GameObject exitMenu;
 		[Tooltip("Optional 4th Menu")]
-		public GameObject extrasMenu;
 
 		public enum Theme { custom1, custom2, custom3 };
 		[Header("THEME SETTINGS")]
 		public Theme theme;
-		private int themeIndex;
 		public ThemedUIData themeController;
 
 		[Header("PANELS")]
 		[Tooltip("The UI Panel parenting all sub menus")]
 		public GameObject mainCanvas;
-		[Tooltip("The UI Panel that holds the CONTROLS window tab")]
-		public GameObject PanelControls;
-		[Tooltip("The UI Panel that holds the VIDEO window tab")]
-		public GameObject PanelVideo;
-		[Tooltip("The UI Panel that holds the GAME window tab")]
-		public GameObject PanelGame;
+		[Tooltip("The UI Panel that holds the 1st window tab")]
+		public GameObject Panel1;
+		[Tooltip("The UI Panel that holds the 2nd window tab")]
+		public GameObject Panel2;
+		[Tooltip("The UI Panel that holds the 3rd window tab")]
+		public GameObject Panel3;
 
 		// highlights in settings screen
 		[Header("SETTINGS SCREEN")]
-		[Tooltip("Highlight Image for when GAME Tab is selected in Settings")]
-		public GameObject lineGame;
-		[Tooltip("Highlight Image for when VIDEO Tab is selected in Settings")]
-		public GameObject lineVideo;
-		[Tooltip("Highlight Image for when CONTROLS Tab is selected in Settings")]
-		public GameObject lineControls;
+		[Tooltip("Highlight Image for when 1st Tab is selected in Settings")]
+		public GameObject line1;
+		[Tooltip("Highlight Image for when 2nd Tab is selected in Settings")]
+		public GameObject line2;
+		[Tooltip("Highlight Image for when 3rd Tab is selected in Settings")]
+		public GameObject line3;
 
 		[Header("LOADING SCREEN")]
-		[Tooltip("If this is true, the loaded scene won't load until receiving user input")]
-		public bool waitForInput = true;
 		public GameObject loadingMenu;
 		[Tooltip("The loading bar Slider UI element in the Loading Screen")]
 		public Slider loadingBar;
-		public TMP_Text loadPromptText;
-		public KeyCode userPromptKey;
 
 		[Header("SFX")]
 		[Tooltip("The GameObject holding the Audio Source component for the HOVER SOUND")]
@@ -71,7 +65,6 @@ namespace SlimUI.ModernMenu
 
 			playMenu.SetActive(false);
 			exitMenu.SetActive(false);
-			if (extrasMenu) extrasMenu.SetActive(false);
 			firstMenu.SetActive(true);
 			mainMenu.SetActive(true);
 
@@ -85,17 +78,14 @@ namespace SlimUI.ModernMenu
 				case Theme.custom1:
 					themeController.currentColor = themeController.custom1.graphic1;
 					themeController.textColor = themeController.custom1.text1;
-					themeIndex = 0;
 					break;
 				case Theme.custom2:
 					themeController.currentColor = themeController.custom2.graphic2;
 					themeController.textColor = themeController.custom2.text2;
-					themeIndex = 1;
 					break;
 				case Theme.custom3:
 					themeController.currentColor = themeController.custom3.graphic3;
 					themeController.textColor = themeController.custom3.text3;
-					themeIndex = 2;
 					break;
 				default:
 					Debug.Log("Invalid theme selected.");
@@ -106,22 +96,12 @@ namespace SlimUI.ModernMenu
 		public void PlayCampaign()
 		{
 			exitMenu.SetActive(false);
-			if (extrasMenu) extrasMenu.SetActive(false);
 			playMenu.SetActive(true);
-		}
-
-		public void PlayCampaignMobile()
-		{
-			exitMenu.SetActive(false);
-			if (extrasMenu) extrasMenu.SetActive(false);
-			playMenu.SetActive(true);
-			mainMenu.SetActive(false);
 		}
 
 		public void ReturnMenu()
 		{
 			playMenu.SetActive(false);
-			if (extrasMenu) extrasMenu.SetActive(false);
 			exitMenu.SetActive(false);
 			mainMenu.SetActive(true);
 		}
@@ -139,47 +119,47 @@ namespace SlimUI.ModernMenu
 			playMenu.SetActive(false);
 		}
 
+		public void Position1()
+		{
+			CameraObject.SetFloat("Animate", 0);
+		}
+
 		public void Position2()
 		{
 			DisablePlayCampaign();
 			CameraObject.SetFloat("Animate", 1);
 		}
 
-		public void Position1()
-		{
-			CameraObject.SetFloat("Animate", 0);
-		}
-
 		void DisablePanels()
 		{
-			PanelControls.SetActive(false);
-			PanelVideo.SetActive(false);
-			PanelGame.SetActive(false);
+			Panel1.SetActive(false);
+			Panel2.SetActive(false);
+			Panel3.SetActive(false);
 
-			lineGame.SetActive(false);
-			lineControls.SetActive(false);
-			lineVideo.SetActive(false);
+			line1.SetActive(false);
+			line2.SetActive(false);
+			line3.SetActive(false);
 		}
 
-		public void GamePanel()
+		public void EnablePanel1()
 		{
 			DisablePanels();
-			PanelGame.SetActive(true);
-			lineGame.SetActive(true);
+			Panel1.SetActive(true);
+			line1.SetActive(true);
 		}
 
-		public void VideoPanel()
+		public void EnablePanel2()
 		{
 			DisablePanels();
-			PanelVideo.SetActive(true);
-			lineVideo.SetActive(true);
+			Panel2.SetActive(true);
+			line2.SetActive(true);
 		}
 
-		public void ControlsPanel()
+		public void EnablePanel3()
 		{
 			DisablePanels();
-			PanelControls.SetActive(true);
-			lineControls.SetActive(true);
+			Panel3.SetActive(true);
+			line3.SetActive(true);
 		}
 
 		public void PlayHover()
@@ -201,23 +181,7 @@ namespace SlimUI.ModernMenu
 		public void AreYouSure()
 		{
 			exitMenu.SetActive(true);
-			if (extrasMenu) extrasMenu.SetActive(false);
 			DisablePlayCampaign();
-		}
-
-		public void AreYouSureMobile()
-		{
-			exitMenu.SetActive(true);
-			if (extrasMenu) extrasMenu.SetActive(false);
-			mainMenu.SetActive(false);
-			DisablePlayCampaign();
-		}
-
-		public void ExtrasMenu()
-		{
-			playMenu.SetActive(false);
-			if (extrasMenu) extrasMenu.SetActive(true);
-			exitMenu.SetActive(false);
 		}
 
 		public void QuitGame()
@@ -234,29 +198,17 @@ namespace SlimUI.ModernMenu
 		{ // scene name is just the name of the current scene being loaded
 			AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
 			operation.allowSceneActivation = false;
-			mainCanvas.SetActive(false);
+			// mainCanvas.SetActive(false);
 			loadingMenu.SetActive(true);
 
 			while (!operation.isDone)
 			{
 				float progress = Mathf.Clamp01(operation.progress / .95f);
 				loadingBar.value = progress;
-
-				if (operation.progress >= 0.9f && waitForInput)
-				{
-					loadPromptText.text = "Press " + userPromptKey.ToString().ToUpper() + " to continue";
-					loadingBar.value = 1;
-
-					if (Input.GetKeyDown(userPromptKey))
-					{
-						operation.allowSceneActivation = true;
-					}
-				}
-				else if (operation.progress >= 0.9f && !waitForInput)
+				if (operation.progress >= 0.9f)
 				{
 					operation.allowSceneActivation = true;
 				}
-
 				yield return null;
 			}
 		}

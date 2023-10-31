@@ -13917,7 +13917,7 @@
       "DisplayName": "Copying UnityPlayer.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "/home/justinwcola/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Resources/LargeUnityIcon.png"
+        "Temp/StagingArea/UnityPlayer.png"
       ],
       "Outputs": [
         "/home/justinwcola/RFSim_Release/RFSim_Data/Resources/UnityPlayer.png"

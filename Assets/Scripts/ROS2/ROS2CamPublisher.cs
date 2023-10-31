@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using ROS2;
 using UnityEngine.Rendering;
+using JetBrains.Annotations;
 
 public class ROS2CamPublisher : MonoBehaviour
 {
@@ -11,9 +12,9 @@ public class ROS2CamPublisher : MonoBehaviour
     private IPublisher<sensor_msgs.msg.Image> camImagePub;
     private IPublisher<sensor_msgs.msg.CameraInfo> camInfoPub;
     private sensor_msgs.msg.CameraInfo camInfo;
+    private sensor_msgs.msg.Image img;
     private Camera cam;
     private RenderTexture rt;
-    private Texture2D img;
     private AsyncGPUReadbackRequest req;
     private byte[] imgData;
 
@@ -24,7 +25,6 @@ public class ROS2CamPublisher : MonoBehaviour
         cam = GetComponent<Camera>();
 
         rt = new RenderTexture(cam.pixelWidth, cam.pixelHeight, 0);
-        img = new Texture2D(cam.pixelWidth, cam.pixelHeight, TextureFormat.RGBA32, false);
 
         var fx = cam.fieldOfView * Mathf.Deg2Rad * cam.pixelWidth / (2 * Mathf.Tan(cam.fieldOfView * Mathf.Deg2Rad / 2));
         var fy = fx;
@@ -38,6 +38,9 @@ public class ROS2CamPublisher : MonoBehaviour
         camInfo.K[5] = cy;
         camInfo.K[8] = 1;
         camInfo.D = new double[5];
+
+        img = new sensor_msgs.msg.Image();
+        imgData = new byte[] { };
     }
     // Update is called once per frame
     private void Update()
@@ -61,20 +64,19 @@ public class ROS2CamPublisher : MonoBehaviour
         req.WaitForCompletion();
 
         //转换为ROS2数据包
-        var msg = new sensor_msgs.msg.Image();
-        msg.Header.Frame_id = "camera_optical_frame";
-        msg.Header.Stamp = timestamp;
-        msg.Height = (uint)rt.height;
-        msg.Width = (uint)rt.width;
-        msg.Encoding = "rgb8";
-        msg.Step = (uint)(rt.width * 3);
-        msg.Data = imgData;
+        img.Header.Frame_id = "camera_optical_frame";
+        img.Header.Stamp = timestamp;
+        img.Height = (uint)rt.height;
+        img.Width = (uint)rt.width;
+        img.Encoding = "rgb8";
+        img.Step = (uint)(rt.width * 3);
+        img.Data = imgData;
 
         //更新时间戳
-        camInfo.Header = msg.Header;
+        camInfo.Header = img.Header;
 
         //发布话题
-        camImagePub.Publish(msg);
+        camImagePub.Publish(img);
         camInfoPub.Publish(camInfo);
     }
     void OnCompleteReadback(AsyncGPUReadbackRequest req)

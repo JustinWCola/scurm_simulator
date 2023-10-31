@@ -85,7 +85,6 @@
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Misc/ExtraLinks.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/Time/ROS2TimeSource.cs" />
     <Compile Include="Assets/Scripts/Controller/GimbalController.cs" />
-    <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Managers/UISettingsManager.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/Time/ITimeSource.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckSFXVolume.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/ThemeEditor/ThemedUI.cs" />
@@ -101,6 +100,7 @@
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2Node.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/Time/ROS2Clock.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2ClientExample.cs" />
+    <Compile Include="Assets/Scripts/ScoreDisplay.cs" />
     <Compile Include="Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckMusicVolume.cs" />
     <Compile Include="Assets/Ros2ForUnity/Scripts/PostInstall.cs" />
     <Compile Include="Assets/Scripts/Controller/LightController.cs" />

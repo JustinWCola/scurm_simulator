@@ -12,6 +12,7 @@ public class FlowerController : MonoBehaviour
     }
     public FlowerStatusType flowerStatus;
     private bool isAnyFanHit;
+    public int score;
     private int[] fanNum;
     private int fanCount = 0;
     private float time = 0.0f;
@@ -21,6 +22,7 @@ public class FlowerController : MonoBehaviour
     private void Start()
     {
         fanNum = new int[5];
+        score = 0;
     }
 
     // Update is called once per frame
@@ -44,6 +46,7 @@ public class FlowerController : MonoBehaviour
                         fan[i].fanStatus = FanController.FanStatusType.Off;
                         fan[i].isFanHit = false;
                     }
+                    score = 0;
                 }
                 break;
             case FlowerStatusType.Attack:
@@ -57,6 +60,7 @@ public class FlowerController : MonoBehaviour
                     {
                         fan[fanNum[fanCount]].fanStatus = FanController.FanStatusType.On;
                         fan[fanNum[fanCount]].isFanHit = false;
+                        score += fan[fanNum[fanCount]].ringNum;
                         fanCount++;
                         if (fanCount == 5)
                         {

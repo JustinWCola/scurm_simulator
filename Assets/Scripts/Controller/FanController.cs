@@ -12,7 +12,7 @@ public class FanController : MonoBehaviour
     }
     public FanStatusType fanStatus;
     public bool isFanHit;
-    public int ringNum = 1;
+    public int ringNum = 0;
     public LightController[] fanLight;
     //0 准星 1 外环 2 中间 3流水
     public LightController[] ringLight;
