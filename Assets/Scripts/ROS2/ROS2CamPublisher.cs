@@ -32,8 +32,6 @@ public class ROS2CamPublisher : MonoBehaviour
         var cy = cam.pixelHeight / 2;
 
         camInfo = new sensor_msgs.msg.CameraInfo();
-        camInfo.Width = (uint)cam.pixelWidth;
-        camInfo.Height = (uint)cam.pixelHeight;
         camInfo.K[0] = fx;
         camInfo.K[2] = cx;
         camInfo.K[4] = fy;

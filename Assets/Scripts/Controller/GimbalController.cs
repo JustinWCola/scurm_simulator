@@ -12,6 +12,9 @@ public class GimbalController : MonoBehaviour
     public float pitchAngleMax = 60;
     public float pitchAngleMin = -30;
     public float chassisSpeed = 3;
+    public bool isGimbalLock = false;
+    public bool isAutoAim = false;
+    private float mouseX, mouseY, keyboardV, keyboardH;
     // Start is called before the first frame update
     private void Start()
     {
@@ -19,24 +22,41 @@ public class GimbalController : MonoBehaviour
     }
 
     // Update is called once per frame
+    private void Update()
+    {
+        mouseX = Input.GetAxis("Mouse X");
+        mouseY = Input.GetAxis("Mouse Y");
+        keyboardV = Input.GetAxis("Vertical");
+        keyboardH = Input.GetAxis("Horizontal");
+
+        if (Input.GetButtonDown("Fire3"))
+            isGimbalLock = !isGimbalLock;
+        if (Input.GetButtonDown("Fire2"))
+            isAutoAim = !isAutoAim;
+        // if (Input.GetKeyDown(KeyCode.Space))
+        //     chassisRigidbody.AddForce(0, 75, 0, ForceMode.Impulse);
+    }
     private void FixedUpdate()
     {
-        var mouseX = Input.GetAxis("Mouse X");
-        var mouseY = Input.GetAxis("Mouse Y");
-        var keyboardV = Input.GetAxis("Vertical");
-        var keyboardH = Input.GetAxis("Horizontal");
-
-        if (Input.GetButton("Fire2"))
+        if (isAutoAim)
         {
+            if (isGimbalLock)
+                Cursor.lockState = CursorLockMode.Confined;
             offsetSub.enabled = true;
             yawTransform.Rotate(0, offsetSub.offset.y, 0);
             pitchTransform.Rotate(-offsetSub.offset.x, 0, 0);
         }
         else
         {
-            offsetSub.enabled = false;
-            yawTransform.Rotate(0, mouseX, 0);
-            pitchTransform.Rotate(-mouseY, 0, 0);
+            if (isGimbalLock)
+                Cursor.lockState = CursorLockMode.Confined;
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                offsetSub.enabled = false;
+                yawTransform.Rotate(0, mouseX, 0);
+                pitchTransform.Rotate(-mouseY, 0, 0);
+            }
         }
 
         var pitchAngle = pitchTransform.localEulerAngles.x;
@@ -47,8 +67,5 @@ public class GimbalController : MonoBehaviour
 
         if (keyboardV != 0 || keyboardH != 0)
             chassisRigidbody.velocity = yawTransform.TransformDirection(-keyboardH * chassisSpeed, chassisRigidbody.velocity.y, -keyboardV * chassisSpeed);
-
-        if (Input.GetKeyDown(KeyCode.Space) && chassisRigidbody.velocity.y < 0.01f)
-            chassisRigidbody.AddForce(0, 75, 0, ForceMode.Impulse);
     }
 }

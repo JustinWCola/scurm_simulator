@@ -27,11 +27,7 @@ public class SpinController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        time += Time.fixedDeltaTime;
-        if (isSpin)
-            transform.Rotate(0, 0, SinusoidalSpin());
-
-        //暂时键盘控制
+        //键盘控制
         if (Input.GetKeyDown(KeyCode.X))
             SinReset();
         if (Input.GetKeyDown(KeyCode.Q))
@@ -44,6 +40,12 @@ public class SpinController : MonoBehaviour
             spinDirection = SpinDirectionType.ClockWise;
             SinReset();
         }
+    }
+    private void FixedUpdate()
+    {
+        time += Time.fixedDeltaTime;
+        if (isSpin)
+            transform.Rotate(0, 0, SinusoidalSpin());
     }
     private void SinReset()
     {

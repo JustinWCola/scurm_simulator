@@ -9,17 +9,17 @@ public class ShootController : MonoBehaviour
     public float bulletSpeed;
     public float bulletFrequency;
     private float time = 0.0f;
+    private bool isFire = false;
     // Start is called before the first frame update
     private void Start()
     {
 
     }
-
     // Update is called once per frame
-    private void Update()
+    private void FixedUpdate()
     {
         if (time < bulletFrequency)
-            time += Time.deltaTime;
+            time += Time.fixedDeltaTime;
         else if (Input.GetButton("Fire1"))
         {
             var bulletGameObject = Instantiate(bullet);

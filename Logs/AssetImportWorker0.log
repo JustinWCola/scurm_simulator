@@ -1,32 +1,23 @@
-Unity Editor version:    2022.3.12f1 (4fe6e059c7ef)
-Branch:                  2022.3/release
-Build type:              Release
-Batch mode:              YES
-System name:             Linux
-Distro version:          #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
-Kernel version:          6.2.0-35-generic
-Architecture:            x86_64
-Available memory:        15337 MB
 Using pre-set license
-Pro License: YES
-Desktop is 1920 x 1080 @ 60 Hz
-Initialize udev device monitor.
+Built from '2022.3/release' branch; Version is '2022.3.12f1 (4fe6e059c7ef) revision 5236448'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 15731 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-Unity
+D:\Unity\2022.3.12f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/home/justinwcola/24FullProcessSimulator
+D:/Study/RM/2024/24FullProcessSimulator
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-39279
-Successfully changed project path to: /home/justinwcola/24FullProcessSimulator
-/home/justinwcola/24FullProcessSimulator
+62766
+Successfully changed project path to: D:/Study/RM/2024/24FullProcessSimulator
+D:/Study/RM/2024/24FullProcessSimulator
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -58,511 +49,67 @@ Successfully changed project path to: /home/justinwcola/24FullProcessSimulator
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [140620398326720] Host "[IP] 192.168.1.231 [Port] 0 [Flags] 2 [Guid] 1148925289 [EditorId] 1148925289 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.100) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11580] Host "[IP] 10.6.76.69 [Port] 0 [Flags] 2 [Guid] 1426161327 [EditorId] 1426161327 [Version] 1048832 [Id] WindowsEditor(7,Cola-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [140620398326720] Host "[IP] 192.168.1.231 [Port] 0 [Flags] 2 [Guid] 1148925289 [EditorId] 1148925289 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.100) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11580] Host "[IP] 10.6.76.69 [Port] 0 [Flags] 2 [Guid] 1426161327 [EditorId] 1426161327 [Version] 1048832 [Id] WindowsEditor(7,Cola-Laptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 74.32 ms, found 884 plugins.
+Refreshing native plugins compatible for Editor in 262.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.12f1 (4fe6e059c7ef)
-[Subsystems] Discovering subsystems at path /home/justinwcola/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /home/justinwcola/24FullProcessSimulator/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2022.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Study/RM/2024/24FullProcessSimulator/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-[vulkan] LoadVulkanLibrary libvulkan.so.1[vulkan] Loaded instance function vkGetInstanceProcAddr
-[vulkan] Loaded instance function vkGetInstanceProcAddr
-[vulkan] Loaded instance function vkCreateInstance
-[vulkan] Loaded instance function vkEnumerateInstanceExtensionProperties
-[vulkan] Loaded instance function vkEnumerateInstanceLayerProperties
-[vulkan] Loaded instance function vkEnumerateInstanceVersion
-[Vulkan init] extensions: count=20
-[Vulkan init] extensions: name=VK_EXT_acquire_drm_display [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_acquire_xlib_display [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_direct_mode_display [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_display_surface_counter [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_display [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_get_display_properties2 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_wayland_surface [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_xcb_surface [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_xlib_surface [enabled=1, external=0]
-[vulkan] Loaded instance function vkDestroyInstance
-[vulkan] Loaded instance function vkGetPhysicalDeviceProperties
-[vulkan] Loaded instance function vkEnumeratePhysicalDevices
-Vulkan detection: 2
-[Vulkan init] extensions: count=20
-[Vulkan init] extensions: name=VK_EXT_acquire_drm_display [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_acquire_xlib_display [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_direct_mode_display [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_display_surface_counter [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_display [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_get_display_properties2 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_wayland_surface [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_xcb_surface [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_xlib_surface [enabled=1, external=0]
-[vulkan] Loaded instance function vkDestroyInstance
-[vulkan] Loaded instance function vkGetPhysicalDeviceProperties
-[vulkan] Loaded instance function vkEnumeratePhysicalDevices
-[vulkan] Loaded instance function vkGetDeviceProcAddr
-[vulkan] Loaded instance function vkGetPhysicalDeviceFeatures
-[vulkan] Loaded instance function vkGetPhysicalDeviceFormatProperties
-[vulkan] Loaded instance function vkGetPhysicalDeviceImageFormatProperties
-[vulkan] Loaded instance function vkGetPhysicalDeviceQueueFamilyProperties
-[vulkan] Loaded instance function vkGetPhysicalDeviceMemoryProperties
-[vulkan] Loaded instance function vkCreateDevice
-[vulkan] Loaded instance function vkEnumerateDeviceExtensionProperties
-[vulkan] Loaded instance function vkEnumerateDeviceLayerProperties
-[vulkan] Loaded instance function vkGetPhysicalDeviceSparseImageFormatProperties
-[vulkan] Loaded instance function vkDestroySurfaceKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceSurfaceSupportKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceSurfaceCapabilitiesKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceSurfaceFormatsKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceSurfacePresentModesKHR
-[vulkan] Loaded instance function vkCreateSwapchainKHR
-[vulkan] Loaded instance function vkDestroySwapchainKHR
-[vulkan] Loaded instance function vkGetSwapchainImagesKHR
-[vulkan] Loaded instance function vkAcquireNextImageKHR
-[vulkan] Loaded instance function vkQueuePresentKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceDisplayPropertiesKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceDisplayPlanePropertiesKHR
-[vulkan] Loaded instance function vkGetDisplayPlaneSupportedDisplaysKHR
-[vulkan] Loaded instance function vkGetDisplayModePropertiesKHR
-[vulkan] Loaded instance function vkCreateDisplayModeKHR
-[vulkan] Loaded instance function vkGetDisplayPlaneCapabilitiesKHR
-[vulkan] Loaded instance function vkCreateDisplayPlaneSurfaceKHR
-[vulkan] Loaded instance function vkCreateSharedSwapchainsKHR
-[vulkan] Loaded instance function vkCreateXlibSurfaceKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceXlibPresentationSupportKHR
-[vulkan] Loaded instance function vkSetHdrMetadataEXT
-[vulkan] Loaded instance function vkGetPhysicalDeviceFeatures2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceProperties2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceFormatProperties2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceImageFormatProperties2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceQueueFamilyProperties2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceMemoryProperties2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceSparseImageFormatProperties2KHR
-[vulkan] Loaded instance function vkGetSemaphoreFdKHR
-[vulkan] Loaded instance function vkImportSemaphoreFdKHR
-[vulkan] Loaded instance function vkGetFenceFdKHR
-[vulkan] Loaded instance function vkImportFenceFdKHR
-[vulkan] Loaded instance function vkCreateSamplerYcbcrConversionKHR
-[vulkan] Loaded instance function vkDestroySamplerYcbcrConversionKHR
-[vulkan] Loaded instance function vkBindBufferMemory2KHR
-[vulkan] Loaded instance function vkBindImageMemory2KHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceExternalSemaphorePropertiesKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceExternalFencePropertiesKHR
-[vulkan] Loaded instance function vkGetPhysicalDeviceFragmentShadingRatesKHR
-[vulkan] Loaded instance function vkSetDebugUtilsObjectNameEXT
-[vulkan] Loaded instance function vkSetDebugUtilsObjectTagEXT
-[vulkan] Loaded instance function vkQueueBeginDebugUtilsLabelEXT
-[vulkan] Loaded instance function vkQueueEndDebugUtilsLabelEXT
-[vulkan] Loaded instance function vkQueueInsertDebugUtilsLabelEXT
-[vulkan] Loaded instance function vkCmdBeginDebugUtilsLabelEXT
-[vulkan] Loaded instance function vkCmdEndDebugUtilsLabelEXT
-[vulkan] Loaded instance function vkCmdInsertDebugUtilsLabelEXT
-[Vulkan init] SelectPhysicalDevice requestedDeviceIndex=-1 xrDevice=(nil)
-[Vulkan init] Physical Device 0x55d1501c7980 [0]: "AMD Unknown (RADV RENOIR)" deviceType=1 vendorID=1002 deviceID=1636
-[Vulkan init] Physical Device 0x55d1501c79b0 [1]: "llvmpipe (LLVM 15.0.7, 256 bits)" deviceType=4 vendorID=10005 deviceID=0
-[Vulkan init] Physical Device 0x55d1501c79e0 [2]: "NVIDIA GeForce RTX 2060" deviceType=2 vendorID=10de deviceID=1f15
-[Vulkan init] Selected physical device 0x55d1501c79e0
-[Vulkan init] Graphics queue count=1
-[Vulkan init] extensions: count=186
-[Vulkan init] extensions: name=VK_AMD_buffer_marker [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_4444_formats [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_attachment_feedback_loop_layout [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_blend_operation_advanced [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_border_color_swizzle [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_buffer_device_address [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_calibrated_timestamps [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_color_write_enable [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_conditional_rendering [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_conservative_rasterization [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_custom_border_color [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_depth_clamp_zero_one [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_depth_clip_control [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_depth_clip_enable [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_depth_range_unrestricted [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_descriptor_buffer [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_descriptor_indexing [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_discard_rectangles [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_display_control [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state2 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state3 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_external_memory_dma_buf [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_external_memory_host [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_fragment_shader_interlock [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_global_priority [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_global_priority_query [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_graphics_pipeline_library [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_host_query_reset [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_image_2d_view_of_3d [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_image_drm_format_modifier [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_image_robustness [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_image_sliced_view_of_3d [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_image_view_min_lod [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_index_type_uint8 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_inline_uniform_block [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_line_rasterization [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_load_store_op_none [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_memory_budget [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_memory_priority [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_mesh_shader [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_multi_draw [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_mutable_descriptor_type [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_non_seamless_cube_map [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_opacity_micromap [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_pageable_device_local_memory [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_pci_bus_info [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_physical_device_drm [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_pipeline_creation_cache_control [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_pipeline_creation_feedback [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_pipeline_library_group_handles [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_pipeline_robustness [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_post_depth_coverage [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_primitive_topology_list_restart [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_primitives_generated_query [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_private_data [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_provoking_vertex [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_queue_family_foreign [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_robustness2 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_sample_locations [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_sampler_filter_minmax [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_scalar_block_layout [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_separate_stencil_usage [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_shader_atomic_float [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_shader_demote_to_helper_invocation [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_shader_image_atomic_int64 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_shader_module_identifier [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_shader_object [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_shader_subgroup_ballot [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_shader_subgroup_vote [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_shader_viewport_index_layer [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_EXT_subgroup_size_control [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_texel_buffer_alignment [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_tooling_info [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_transform_feedback [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_vertex_attribute_divisor [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_vertex_input_dynamic_state [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_ycbcr_2plane_444_formats [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_EXT_ycbcr_image_arrays [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_16bit_storage [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_8bit_storage [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_acceleration_structure [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_bind_memory2 [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_buffer_device_address [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_copy_commands2 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_create_renderpass2 [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_dedicated_allocation [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_deferred_host_operations [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_depth_stencil_resolve [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_descriptor_update_template [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_device_group [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_draw_indirect_count [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_driver_properties [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_dynamic_rendering [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_fence [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_fence_fd [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_memory [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_memory_fd [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_semaphore [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_external_semaphore_fd [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_format_feature_flags2 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_fragment_shader_barycentric [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_fragment_shading_rate [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_get_memory_requirements2 [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_global_priority [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_image_format_list [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_imageless_framebuffer [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_maintenance1 [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_maintenance2 [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_maintenance3 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_maintenance4 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_multiview [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_pipeline_executable_properties [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_pipeline_library [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_present_id [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_present_wait [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_push_descriptor [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_ray_query [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_ray_tracing_maintenance1 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_ray_tracing_pipeline [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_relaxed_block_layout [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_sampler_mirror_clamp_to_edge [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_sampler_ycbcr_conversion [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_separate_depth_stencil_layouts [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_shader_atomic_int64 [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_shader_clock [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_shader_draw_parameters [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_shader_float16_int8 [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_shader_float_controls [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_shader_integer_dot_product [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_shader_non_semantic_info [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_shader_subgroup_extended_types [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_shader_subgroup_uniform_control_flow [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_shader_terminate_invocation [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_shared_presentable_image [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_spirv_1_4 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_storage_buffer_storage_class [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_swapchain [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_swapchain_mutable_format [enabled=1, external=0]
-[Vulkan init] extensions: name=VK_KHR_synchronization2 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_timeline_semaphore [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_uniform_buffer_standard_layout [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_variable_pointers [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_video_decode_h264 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_video_decode_h265 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_video_decode_queue [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_video_queue [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_vulkan_memory_model [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_workgroup_memory_explicit_layout [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_KHR_zero_initialize_workgroup_memory [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NVX_binary_import [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NVX_image_view_handle [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NVX_multiview_per_view_attributes [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_clip_space_w_scaling [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_compute_shader_derivatives [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_cooperative_matrix [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_copy_memory_indirect [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_corner_sampled_image [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_coverage_reduction_mode [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_cuda_kernel_launch [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_dedicated_allocation [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_dedicated_allocation_image_aliasing [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_device_diagnostic_checkpoints [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_device_diagnostics_config [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_device_generated_commands [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_fill_rectangle [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_fragment_coverage_to_color [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_fragment_shader_barycentric [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_fragment_shading_rate_enums [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_framebuffer_mixed_samples [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_geometry_shader_passthrough [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_inherited_viewport_scissor [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_linear_color_attachment [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_memory_decompression [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_mesh_shader [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_ray_tracing [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_ray_tracing_invocation_reorder [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_representative_fragment_test [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_sample_mask_override_coverage [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_scissor_exclusive [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_shader_image_footprint [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_shader_sm_builtins [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_shader_subgroup_partitioned [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_shading_rate_image [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_viewport_array2 [enabled=0, external=0]
-[Vulkan init] extensions: name=VK_NV_viewport_swizzle [enabled=0, external=0]
-[vulkan] Loaded device function vkDestroyDevice
-[vulkan] Loaded device function vkGetDeviceQueue
-[vulkan] Loaded device function vkQueueSubmit
-[vulkan] Loaded device function vkQueueWaitIdle
-[vulkan] Loaded device function vkDeviceWaitIdle
-[vulkan] Loaded device function vkAllocateMemory
-[vulkan] Loaded device function vkFreeMemory
-[vulkan] Loaded device function vkMapMemory
-[vulkan] Loaded device function vkUnmapMemory
-[vulkan] Loaded device function vkFlushMappedMemoryRanges
-[vulkan] Loaded device function vkInvalidateMappedMemoryRanges
-[vulkan] Loaded device function vkGetDeviceMemoryCommitment
-[vulkan] Loaded device function vkBindBufferMemory
-[vulkan] Loaded device function vkBindImageMemory
-[vulkan] Loaded device function vkGetBufferMemoryRequirements
-[vulkan] Loaded device function vkGetImageMemoryRequirements
-[vulkan] Loaded device function vkGetImageSparseMemoryRequirements
-[vulkan] Loaded device function vkQueueBindSparse
-[vulkan] Loaded device function vkCreateFence
-[vulkan] Loaded device function vkDestroyFence
-[vulkan] Loaded device function vkResetFences
-[vulkan] Loaded device function vkGetFenceStatus
-[vulkan] Loaded device function vkWaitForFences
-[vulkan] Loaded device function vkCreateSemaphore
-[vulkan] Loaded device function vkDestroySemaphore
-[vulkan] Loaded device function vkCreateEvent
-[vulkan] Loaded device function vkDestroyEvent
-[vulkan] Loaded device function vkGetEventStatus
-[vulkan] Loaded device function vkSetEvent
-[vulkan] Loaded device function vkResetEvent
-[vulkan] Loaded device function vkCreateQueryPool
-[vulkan] Loaded device function vkDestroyQueryPool
-[vulkan] Loaded device function vkGetQueryPoolResults
-[vulkan] Loaded device function vkCreateBuffer
-[vulkan] Loaded device function vkDestroyBuffer
-[vulkan] Loaded device function vkCreateBufferView
-[vulkan] Loaded device function vkDestroyBufferView
-[vulkan] Loaded device function vkCreateImage
-[vulkan] Loaded device function vkDestroyImage
-[vulkan] Loaded device function vkGetImageSubresourceLayout
-[vulkan] Loaded device function vkCreateImageView
-[vulkan] Loaded device function vkDestroyImageView
-[vulkan] Loaded device function vkCreateShaderModule
-[vulkan] Loaded device function vkDestroyShaderModule
-[vulkan] Loaded device function vkCreatePipelineCache
-[vulkan] Loaded device function vkDestroyPipelineCache
-[vulkan] Loaded device function vkGetPipelineCacheData
-[vulkan] Loaded device function vkMergePipelineCaches
-[vulkan] Loaded device function vkCreateGraphicsPipelines
-[vulkan] Loaded device function vkCreateComputePipelines
-[vulkan] Loaded device function vkDestroyPipeline
-[vulkan] Loaded device function vkCreatePipelineLayout
-[vulkan] Loaded device function vkDestroyPipelineLayout
-[vulkan] Loaded device function vkCreateSampler
-[vulkan] Loaded device function vkDestroySampler
-[vulkan] Loaded device function vkCreateDescriptorSetLayout
-[vulkan] Loaded device function vkDestroyDescriptorSetLayout
-[vulkan] Loaded device function vkCreateDescriptorPool
-[vulkan] Loaded device function vkDestroyDescriptorPool
-[vulkan] Loaded device function vkResetDescriptorPool
-[vulkan] Loaded device function vkAllocateDescriptorSets
-[vulkan] Loaded device function vkFreeDescriptorSets
-[vulkan] Loaded device function vkUpdateDescriptorSets
-[vulkan] Loaded device function vkCreateFramebuffer
-[vulkan] Loaded device function vkDestroyFramebuffer
-[vulkan] Loaded device function vkCreateRenderPass
-[vulkan] Loaded device function vkDestroyRenderPass
-[vulkan] Loaded device function vkGetRenderAreaGranularity
-[vulkan] Loaded device function vkCreateCommandPool
-[vulkan] Loaded device function vkDestroyCommandPool
-[vulkan] Loaded device function vkResetCommandPool
-[vulkan] Loaded device function vkAllocateCommandBuffers
-[vulkan] Loaded device function vkFreeCommandBuffers
-[vulkan] Loaded device function vkBeginCommandBuffer
-[vulkan] Loaded device function vkEndCommandBuffer
-[vulkan] Loaded device function vkResetCommandBuffer
-[vulkan] Loaded device function vkCmdBindPipeline
-[vulkan] Loaded device function vkCmdSetViewport
-[vulkan] Loaded device function vkCmdSetScissor
-[vulkan] Loaded device function vkCmdSetLineWidth
-[vulkan] Loaded device function vkCmdSetDepthBias
-[vulkan] Loaded device function vkCmdSetBlendConstants
-[vulkan] Loaded device function vkCmdSetDepthBounds
-[vulkan] Loaded device function vkCmdSetStencilCompareMask
-[vulkan] Loaded device function vkCmdSetStencilWriteMask
-[vulkan] Loaded device function vkCmdSetStencilReference
-[vulkan] Loaded device function vkCmdBindDescriptorSets
-[vulkan] Loaded device function vkCmdBindIndexBuffer
-[vulkan] Loaded device function vkCmdBindVertexBuffers
-[vulkan] Loaded device function vkCmdDraw
-[vulkan] Loaded device function vkCmdDrawIndexed
-[vulkan] Loaded device function vkCmdDrawIndirect
-[vulkan] Loaded device function vkCmdDrawIndexedIndirect
-[vulkan] Loaded device function vkCmdDispatch
-[vulkan] Loaded device function vkCmdDispatchIndirect
-[vulkan] Loaded device function vkCmdCopyBuffer
-[vulkan] Loaded device function vkCmdCopyImage
-[vulkan] Loaded device function vkCmdBlitImage
-[vulkan] Loaded device function vkCmdCopyBufferToImage
-[vulkan] Loaded device function vkCmdCopyImageToBuffer
-[vulkan] Loaded device function vkCmdUpdateBuffer
-[vulkan] Loaded device function vkCmdFillBuffer
-[vulkan] Loaded device function vkCmdClearColorImage
-[vulkan] Loaded device function vkCmdClearDepthStencilImage
-[vulkan] Loaded device function vkCmdClearAttachments
-[vulkan] Loaded device function vkCmdResolveImage
-[vulkan] Loaded device function vkCmdSetEvent
-[vulkan] Loaded device function vkCmdResetEvent
-[vulkan] Loaded device function vkCmdWaitEvents
-[vulkan] Loaded device function vkCmdPipelineBarrier
-[vulkan] Loaded device function vkCmdBeginQuery
-[vulkan] Loaded device function vkCmdEndQuery
-[vulkan] Loaded device function vkCmdResetQueryPool
-[vulkan] Loaded device function vkCmdWriteTimestamp
-[vulkan] Loaded device function vkCmdCopyQueryPoolResults
-[vulkan] Loaded device function vkCmdPushConstants
-[vulkan] Loaded device function vkCmdBeginRenderPass
-[vulkan] Loaded device function vkCmdNextSubpass
-[vulkan] Loaded device function vkCmdEndRenderPass
-[vulkan] Loaded device function vkCmdExecuteCommands
-[vulkan] Loaded device function vkGetImageMemoryRequirements2KHR
-[vulkan] Loaded device function vkGetBufferMemoryRequirements2KHR
-[vulkan] Loaded device function vkGetImageSparseMemoryRequirements2KHR
-[vulkan] Loaded device function vkCreateDescriptorUpdateTemplateKHR
-[vulkan] Loaded device function vkDestroyDescriptorUpdateTemplateKHR
-[vulkan] Loaded device function vkUpdateDescriptorSetWithTemplateKHR
-[vulkan] Loaded device function vkCmdBeginRenderPass2KHR
-[vulkan] Loaded device function vkCmdEndRenderPass2KHR
-[vulkan] Loaded device function vkCmdNextSubpass2KHR
-[vulkan] Loaded device function vkCreateRenderPass2KHR
-[vulkan] Loaded device function vkCmdSetFragmentShadingRateKHR
-[vulkan] Failed to load device function vkDebugMarkerSetObjectTagEXT
-[vulkan] Loaded instance function vkDebugMarkerSetObjectTagEXT
-[vulkan] Failed to load device function vkDebugMarkerSetObjectNameEXT
-[vulkan] Loaded instance function vkDebugMarkerSetObjectNameEXT
-[vulkan] Failed to load device function vkCmdDebugMarkerBeginEXT
-[vulkan] Loaded instance function vkCmdDebugMarkerBeginEXT
-[vulkan] Failed to load device function vkCmdDebugMarkerEndEXT
-[vulkan] Loaded instance function vkCmdDebugMarkerEndEXT
-[vulkan] Failed to load device function vkCmdDebugMarkerInsertEXT
-[vulkan] Loaded instance function vkCmdDebugMarkerInsertEXT
-Vulkan API version 1.1.0 (1.3.242 supported by driver, 1.1.0 requested)
-Vulkan vendor=[NVIDIA] id=[10de]
-Vulkan renderer=[NVIDIA GeForce RTX 2060] id=[1f15]
-Vulkan device type 2
-Vulkan driverversion=[0x85dc4040] uint=[-2049163200]
-Vulkan PSO: Cache data successfully loaded [size=865799,path=/tmp/SCURM/RFSim/vulkan_pso_cache.bin]
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   NVIDIA
+    VRAM:     5968 MB
+    Driver:   31.0.15.3713
 Initialize mono
-Mono path[0] = '/home/justinwcola/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Managed'
-Mono path[1] = '/home/justinwcola/Unity/Hub/Editor/2022.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
-Mono config path = '/home/justinwcola/Unity/Hub/Editor/2022.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56920
+Mono path[0] = 'D:/Unity/2022.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2022.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2022.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /home/justinwcola/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.014632 seconds.
-- Loaded All Assemblies, in  0.529 seconds
-Native extension for LinuxStandalone target not found
+Register platform support module: D:/Unity/2022.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/2022.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005724 seconds.
+- Loaded All Assemblies, in  0.490 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.486 seconds
-Domain Reload Profiling: 1015ms
-	BeginReloadAssembly (139ms)
+- Finished resetting the current domain, in  0.306 seconds
+Domain Reload Profiling: 796ms
+	BeginReloadAssembly (163ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (57ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (121ms)
-	LoadAllAssembliesAndSetupDomain (199ms)
-		LoadAssemblies (137ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (194ms)
+		LoadAssemblies (164ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (196ms)
-			TypeCache.Refresh (193ms)
-				TypeCache.ScanAssembly (176ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (188ms)
+				TypeCache.ScanAssembly (173ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (486ms)
+	FinalizeReload (307ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (382ms)
+		SetupLoadedEditorAssemblies (234ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (13ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (251ms)
-			ProcessInitializeOnLoadMethodAttributes (95ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (152ms)
+			ProcessInitializeOnLoadMethodAttributes (63ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -570,625 +117,309 @@ Domain Reload Profiling: 1015ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.741 seconds
-Refreshing native plugins compatible for Editor in 40.98 ms, found 884 plugins.
-Native extension for LinuxStandalone target not found
+- Loaded All Assemblies, in  0.871 seconds
+Refreshing native plugins compatible for Editor in 243.34 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.839 seconds
-Domain Reload Profiling: 1580ms
-	BeginReloadAssembly (167ms)
+- Finished resetting the current domain, in  0.727 seconds
+Domain Reload Profiling: 1599ms
+	BeginReloadAssembly (200ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (65ms)
-	LoadAllAssembliesAndSetupDomain (465ms)
-		LoadAssemblies (302ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (570ms)
+		LoadAssemblies (425ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (236ms)
-			TypeCache.Refresh (204ms)
-				TypeCache.ScanAssembly (189ms)
+		AnalyzeDomain (272ms)
+			TypeCache.Refresh (243ms)
+				TypeCache.ScanAssembly (223ms)
 			ScanForSourceGeneratedMonoScriptInfo (23ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (840ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (728ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (631ms)
+		SetupLoadedEditorAssemblies (544ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
+			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (74ms)
-			ProcessInitializeOnLoadAttributes (436ms)
-			ProcessInitializeOnLoadMethodAttributes (100ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (374ms)
+			ProcessInitializeOnLoadMethodAttributes (83ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler after 0.06 seconds
-Refreshing native plugins compatible for Editor in 43.40 ms, found 884 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 216.99 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5261 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 962 unused Assets / (2.3 MB). Loaded Objects now: 4835.
-Memory consumption went from 287.6 MB to 285.4 MB.
-Total: 12.649303 ms (FindLiveObjects: 0.618165 ms CreateObjectMapping: 0.540781 ms MarkObjects: 7.059836 ms  DeleteObjects: 4.419625 ms)
+Unloading 5257 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 963 unused Assets / (2.6 MB). Loaded Objects now: 4797.
+Memory consumption went from 192.1 MB to 189.5 MB.
+Total: 6.090600 ms (FindLiveObjects: 0.652700 ms CreateObjectMapping: 0.466400 ms MarkObjects: 3.212300 ms  DeleteObjects: 1.757200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 889.666732 seconds.
-  path: Assets/Materials/Lights/Blue Glow.mat
-  artifactKey: Guid(71704d7d6a56aa94d8a2f04bcafc79c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Lights/Blue Glow.mat using Guid(71704d7d6a56aa94d8a2f04bcafc79c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357c849f9c4b09a192c02232f9e504d5') in 0.144463 seconds
+  Time since last request: 37046.875650 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '868ae7279cb8681e901fb13a12c8cb7e') in 0.168006 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 4
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Materials/Lights/Red Glow.mat
-  artifactKey: Guid(d8308a0c69e73a44fbc9ca9d48c718a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Lights/Red Glow.mat using Guid(d8308a0c69e73a44fbc9ca9d48c718a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97126bb5ee9807c7235e6d55062268c9') in 0.005540 seconds
+  Time since last request: 1.895336 seconds.
+  path: Assets/Scripts/LockStatus.cs
+  artifactKey: Guid(8c155908c0e62554eb9d99e2411f410e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/LockStatus.cs using Guid(8c155908c0e62554eb9d99e2411f410e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c8011a9efb5540e51789a429961d047') in 0.000776 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Materials/Lights/Red Glow Pure.mat
-  artifactKey: Guid(f223c2d8473617946a8a06ab024f1b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Lights/Red Glow Pure.mat using Guid(f223c2d8473617946a8a06ab024f1b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce939da35d7dbafa3057abdd02cab233') in 0.005520 seconds
+  Time since last request: 8.818100 seconds.
+  path: Assets/Scripts/Controller/SpinController.cs
+  artifactKey: Guid(2b69db2ba6eba83edaf1cc65acec0574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controller/SpinController.cs using Guid(2b69db2ba6eba83edaf1cc65acec0574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650cc63ad03596776cedfa9b43d0f7a6') in 0.000469 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.631020 seconds.
+  path: Assets/Scripts/Controller/GimbalController.cs
+  artifactKey: Guid(6c4bf05526d70afc2850128b66a8efc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controller/GimbalController.cs using Guid(6c4bf05526d70afc2850128b66a8efc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf6d7d958413d8f2269e166b89897df9') in 0.000612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.509 seconds
-Refreshing native plugins compatible for Editor in 39.53 ms, found 884 plugins.
-Native extension for LinuxStandalone target not found
+- Loaded All Assemblies, in  0.568 seconds
+Refreshing native plugins compatible for Editor in 176.37 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.009 seconds
-Domain Reload Profiling: 1517ms
-	BeginReloadAssembly (183ms)
+- Finished resetting the current domain, in  1.315 seconds
+Domain Reload Profiling: 1883ms
+	BeginReloadAssembly (196ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (68ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (241ms)
-		LoadAssemblies (295ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (267ms)
+		LoadAssemblies (352ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1316ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (500ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (336ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 158.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5198 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 951 unused Assets / (2.4 MB). Loaded Objects now: 4845.
+Memory consumption went from 185.7 MB to 183.3 MB.
+Total: 4.419100 ms (FindLiveObjects: 0.437000 ms CreateObjectMapping: 0.270600 ms MarkObjects: 2.486700 ms  DeleteObjects: 1.223400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.552 seconds
+Refreshing native plugins compatible for Editor in 183.84 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.524 seconds
+Domain Reload Profiling: 2076ms
+	BeginReloadAssembly (190ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (266ms)
+		LoadAssemblies (366ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
 			TypeCache.Refresh (5ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1009ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1524ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (580ms)
+		SetupLoadedEditorAssemblies (499ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
+			InitializePlatformSupportModulesInManaged (8ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (72ms)
-			ProcessInitializeOnLoadAttributes (396ms)
-			ProcessInitializeOnLoadMethodAttributes (93ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (341ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 48.27 ms, found 884 plugins.
+Refreshing native plugins compatible for Editor in 215.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5202 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 951 unused Assets / (2.3 MB). Loaded Objects now: 4879.
-Memory consumption went from 279.7 MB to 277.4 MB.
-Total: 5.306889 ms (FindLiveObjects: 0.473455 ms CreateObjectMapping: 0.208895 ms MarkObjects: 3.309429 ms  DeleteObjects: 1.307848 ms)
+Unloading 5199 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 951 unused Assets / (2.6 MB). Loaded Objects now: 4848.
+Memory consumption went from 187.9 MB to 185.3 MB.
+Total: 6.296700 ms (FindLiveObjects: 0.624800 ms CreateObjectMapping: 0.202700 ms MarkObjects: 3.351400 ms  DeleteObjects: 2.116200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.662 seconds
-Refreshing native plugins compatible for Editor in 62.82 ms, found 884 plugins.
-Native extension for LinuxStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.431 seconds
-Domain Reload Profiling: 2092ms
-	BeginReloadAssembly (214ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (67ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (325ms)
-		LoadAssemblies (391ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (21ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1432ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (787ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (107ms)
-			ProcessInitializeOnLoadAttributes (522ms)
-			ProcessInitializeOnLoadMethodAttributes (128ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 63.56 ms, found 884 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5203 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 951 unused Assets / (2.2 MB). Loaded Objects now: 4882.
-Memory consumption went from 282.6 MB to 280.4 MB.
-Total: 6.027652 ms (FindLiveObjects: 0.527721 ms CreateObjectMapping: 0.213155 ms MarkObjects: 4.043251 ms  DeleteObjects: 1.232908 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.678 seconds
-Refreshing native plugins compatible for Editor in 63.76 ms, found 884 plugins.
-Native extension for LinuxStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.477 seconds
-Domain Reload Profiling: 2154ms
-	BeginReloadAssembly (217ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (70ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (59ms)
-	LoadAllAssembliesAndSetupDomain (333ms)
-		LoadAssemblies (402ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (20ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1478ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (814ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (112ms)
-			ProcessInitializeOnLoadAttributes (540ms)
-			ProcessInitializeOnLoadMethodAttributes (132ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 51.02 ms, found 884 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5203 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 951 unused Assets / (2.2 MB). Loaded Objects now: 4885.
-Memory consumption went from 285.3 MB to 283.1 MB.
-Total: 6.391804 ms (FindLiveObjects: 0.754076 ms CreateObjectMapping: 0.261975 ms MarkObjects: 3.886039 ms  DeleteObjects: 1.479727 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 767.532249 seconds.
-  path: Assets/Scripts/ROS2/ROS2CamPublisher.cs
-  artifactKey: Guid(6552a5edbae1d32738c9db7d9b7c6d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ROS2/ROS2CamPublisher.cs using Guid(6552a5edbae1d32738c9db7d9b7c6d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394b4ff16e1220dbb3d1146ceb52d448') in 0.003894 seconds
+  Time since last request: 222.361292 seconds.
+  path: Assets/Scenes/RMUL.unity
+  artifactKey: Guid(0941d2e55d67f944f8867da3a8808ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/RMUL.unity using Guid(0941d2e55d67f944f8867da3a8808ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eacf658d5b2b833a27fa338d6f701716') in 0.002576 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.619 seconds
-Refreshing native plugins compatible for Editor in 44.07 ms, found 884 plugins.
-Native extension for LinuxStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.978 seconds
-Domain Reload Profiling: 1596ms
-	BeginReloadAssembly (204ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (53ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (292ms)
-		LoadAssemblies (342ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (35ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (2ms)
-			ScanForSourceGeneratedMonoScriptInfo (16ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (978ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (553ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (74ms)
-			ProcessInitializeOnLoadAttributes (369ms)
-			ProcessInitializeOnLoadMethodAttributes (90ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 39.85 ms, found 884 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5202 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 951 unused Assets / (2.2 MB). Loaded Objects now: 4888.
-Memory consumption went from 287.7 MB to 285.5 MB.
-Total: 5.724121 ms (FindLiveObjects: 0.579124 ms CreateObjectMapping: 0.317499 ms MarkObjects: 3.640896 ms  DeleteObjects: 1.177594 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.474 seconds
-Refreshing native plugins compatible for Editor in 40.33 ms, found 884 plugins.
-Native extension for LinuxStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.065 seconds
-Domain Reload Profiling: 1539ms
-	BeginReloadAssembly (148ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (243ms)
-		LoadAssemblies (293ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (15ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1066ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (622ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (84ms)
-			ProcessInitializeOnLoadAttributes (422ms)
-			ProcessInitializeOnLoadMethodAttributes (95ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 41.81 ms, found 884 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5203 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 951 unused Assets / (2.2 MB). Loaded Objects now: 4891.
-Memory consumption went from 290.6 MB to 288.4 MB.
-Total: 5.114197 ms (FindLiveObjects: 0.468355 ms CreateObjectMapping: 0.196114 ms MarkObjects: 3.319416 ms  DeleteObjects: 1.122280 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
 Received Import Request.
-  Time since last request: 103.737121 seconds.
-  path: Assets/Scripts/ROS2/ROS2CamPublisher.cs
-  artifactKey: Guid(6552a5edbae1d32738c9db7d9b7c6d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ROS2/ROS2CamPublisher.cs using Guid(6552a5edbae1d32738c9db7d9b7c6d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da982319024a835168bb5fa4200db1c') in 0.002102 seconds
+  Time since last request: 2.782727 seconds.
+  path: Assets/Scenes/RMUC.unity
+  artifactKey: Guid(2e881f14c8962b880a492c04fb480cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/RMUC.unity using Guid(2e881f14c8962b880a492c04fb480cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c8e442d5e3425b79913e3e96a221bf') in 0.000492 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.669 seconds
-Refreshing native plugins compatible for Editor in 62.99 ms, found 884 plugins.
-Native extension for LinuxStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.434 seconds
-Domain Reload Profiling: 2101ms
-	BeginReloadAssembly (216ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (67ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (329ms)
-		LoadAssemblies (397ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (21ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1434ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (778ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (108ms)
-			ProcessInitializeOnLoadAttributes (521ms)
-			ProcessInitializeOnLoadMethodAttributes (120ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 49.95 ms, found 884 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5202 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 951 unused Assets / (2.1 MB). Loaded Objects now: 4894.
-Memory consumption went from 293.0 MB to 290.9 MB.
-Total: 5.938673 ms (FindLiveObjects: 0.695480 ms CreateObjectMapping: 0.403823 ms MarkObjects: 3.668063 ms  DeleteObjects: 1.162718 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.687 seconds
-Refreshing native plugins compatible for Editor in 62.96 ms, found 884 plugins.
-Native extension for LinuxStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.337 seconds
-Domain Reload Profiling: 2022ms
-	BeginReloadAssembly (218ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (72ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (345ms)
-		LoadAssemblies (411ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (21ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1337ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (704ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (102ms)
-			ProcessInitializeOnLoadAttributes (469ms)
-			ProcessInitializeOnLoadMethodAttributes (107ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 42.25 ms, found 884 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5203 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 951 unused Assets / (2.2 MB). Loaded Objects now: 4897.
-Memory consumption went from 295.9 MB to 293.7 MB.
-Total: 5.993918 ms (FindLiveObjects: 0.698832 ms CreateObjectMapping: 0.490425 ms MarkObjects: 3.496464 ms  DeleteObjects: 1.297791 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 18.779901 seconds.
+  path: Assets/Prefabs/Infantry.prefab
+  artifactKey: Guid(4046be86e92fb8343b9d7f4d0bca45a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Infantry.prefab using Guid(4046be86e92fb8343b9d7f4d0bca45a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40bed25d33ee373f8c5c4b17c5ec9c1e') in 0.559663 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 473
 ========================================================================
 Received Import Request.
-  Time since last request: 2192.590561 seconds.
-  path: Assets/Materials/Lights/Blue Glow Pure.mat
-  artifactKey: Guid(b91186ef5cbf2ff439699109640f2220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Lights/Blue Glow Pure.mat using Guid(b91186ef5cbf2ff439699109640f2220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72bee07fb8e90c1930d7441668112491') in 0.198868 seconds
+  Time since last request: 811.351656 seconds.
+  path: Assets/Models/Trapezoidal Highland 4 Light.fbx
+  artifactKey: Guid(711817857b9f0b64dba8a94914587702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trapezoidal Highland 4 Light.fbx using Guid(711817857b9f0b64dba8a94914587702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b4ae0ead7baa877faa572ca371976cd') in 0.109314 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 7
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.673 seconds
-Refreshing native plugins compatible for Editor in 64.01 ms, found 884 plugins.
-Native extension for LinuxStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.483 seconds
-Domain Reload Profiling: 2154ms
-	BeginReloadAssembly (217ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (67ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (330ms)
-		LoadAssemblies (400ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (21ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1484ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (818ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (108ms)
-			ProcessInitializeOnLoadAttributes (547ms)
-			ProcessInitializeOnLoadMethodAttributes (133ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 85.03 ms, found 884 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5202 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 951 unused Assets / (2.2 MB). Loaded Objects now: 4900.
-Memory consumption went from 293.4 MB to 291.1 MB.
-Total: 9.796357 ms (FindLiveObjects: 0.934686 ms CreateObjectMapping: 0.678717 ms MarkObjects: 5.947334 ms  DeleteObjects: 2.223188 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 306bfa6df2d96854e1ebb52f3ddacab7 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/ç›²é“.fbx
+  artifactKey: Guid(14305c75e70f6f94fae056c1a012b4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/ç›²é“.fbx using Guid(14305c75e70f6f94fae056c1a012b4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206e40279e78aa04ca79785e2fac2726') in 0.032204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Models/æ¢¯å½¢å¡R3.fbx
+  artifactKey: Guid(356931b9d65f7934c8c3358d1c142687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/æ¢¯å½¢å¡R3.fbx using Guid(356931b9d65f7934c8c3358d1c142687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79514deb539c76b5aaa5553b45ded040') in 0.065419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/å¾½æ ‡ç¯.fbx
+  artifactKey: Guid(b7e0beab4b535244583d4ff214f3d49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/å¾½æ ‡ç¯.fbx using Guid(b7e0beab4b535244583d4ff214f3d49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fb8880898df1d1bb7213769f88e25a8') in 0.023221 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/èµ„æºå²›ç¯æ¡.fbx
+  artifactKey: Guid(ea43e0c5c83b1e94fa889e264e477f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/èµ„æºå²›ç¯æ¡.fbx using Guid(ea43e0c5c83b1e94fa889e264e477f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b64e1d0185dc9c990098bac4a6ba5f') in 0.024752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/å®Œæ•´ç¯å½¢é«˜åœ°ç¯å¸¦.fbx
+  artifactKey: Guid(a9a465c72f8ef74469551204463dd417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/å®Œæ•´ç¯å½¢é«˜åœ°ç¯å¸¦.fbx using Guid(a9a465c72f8ef74469551204463dd417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0d5fe972ed573e041240f33249f00c7') in 0.025396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ÓÉÓÚÏß³ÌÍË³ö»òÓ¦ÓÃ³ÌĞòÇëÇó£¬ÒÑÖĞÖ¹ I/O ²Ù×÷¡£
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
