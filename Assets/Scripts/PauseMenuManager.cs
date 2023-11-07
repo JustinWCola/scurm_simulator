@@ -1,67 +1,87 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour
 {
-    private bool isPaused;
     public GameObject pausePanel;
     public Slider yawSensitivity;
     public Slider pitchSensitivity;
     public Slider fieldOfView;
-    public Camera targetCamera;
+    public Camera GameCamera;
+    public Camera ROS2Camera;
     // Start is called before the first frame update
     private void Start()
     {
-        isPaused = false;
-    }
 
+    }
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-            isPaused = !isPaused;
-        if (isPaused)
-        {
-            Cursor.lockState = CursorLockMode.Confined;
-            pausePanel.SetActive(true);
-            Time.timeScale = 0;
-        }
-        else
-        {
-            pausePanel.SetActive(false);
-            Time.timeScale = 1;
-        }
+        if (GimbalController.inputActions.Gameplay.Pause.WasPressedThisFrame())
+            PauseGame();
+        if (GimbalController.inputActions.UI.Cancel.WasPressedThisFrame())
+            UnpauseGame();
     }
-    public void ResumeGame()
+    public void PauseGame()
     {
-        isPaused = false;
+        pausePanel.SetActive(true);
+        Time.timeScale = 0;
+        GimbalController.inputActions.Gameplay.Disable();
+        GimbalController.inputActions.UI.Enable();
+        Cursor.lockState = CursorLockMode.Confined;
     }
-    public void ReturnMain()
+    public void UnpauseGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        pausePanel.SetActive(false);
+        Time.timeScale = 1;
+        GimbalController.inputActions.UI.Disable();
+        GimbalController.inputActions.Gameplay.Enable();
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+    public void LoadScene(string scene)
+    {
+        Time.timeScale = 1;
+        if (scene != "")
+        {
+            StartCoroutine(LoadAsynchronously(scene));
+        }
     }
     public void QuitGame()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-		Application.Quit();
+        Application.Quit();
 #endif
     }
     public void YawSensitivitySlider()
     {
-        PlayerPrefs.SetFloat("XSensitivity", yawSensitivity.value);
+        GimbalController.sensitivity.x = yawSensitivity.value;
     }
-
     public void PitchSensitivitySlider()
     {
-        PlayerPrefs.SetFloat("YSensitivity", pitchSensitivity.value);
+        GimbalController.sensitivity.y = pitchSensitivity.value;
     }
     public void fieldOfViewSlider()
     {
-        targetCamera.fieldOfView = fieldOfView.value;
+        GameCamera.fieldOfView = fieldOfView.value;
+        ROS2Camera.fieldOfView = fieldOfView.value;
+    }
+
+    IEnumerator LoadAsynchronously(string sceneName)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+        operation.allowSceneActivation = false;
+
+        while (!operation.isDone)
+        {
+            if (operation.progress >= 0.9f)
+                operation.allowSceneActivation = true;
+            yield return null;
+        }
     }
 }

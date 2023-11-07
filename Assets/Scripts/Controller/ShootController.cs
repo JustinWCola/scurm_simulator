@@ -9,7 +9,6 @@ public class ShootController : MonoBehaviour
     public float bulletSpeed;
     public float bulletFrequency;
     private float time = 0.0f;
-    private bool isFire = false;
     // Start is called before the first frame update
     private void Start()
     {
@@ -19,8 +18,8 @@ public class ShootController : MonoBehaviour
     private void FixedUpdate()
     {
         if (time < bulletFrequency)
-            time += Time.fixedDeltaTime;
-        else if (Input.GetButton("Fire1"))
+            time += Time.deltaTime;
+        else if (GimbalController.inputActions.Gameplay.Shoot.IsPressed())
         {
             var bulletGameObject = Instantiate(bullet);
             bulletGameObject.GetComponent<Transform>().position = transform.position;

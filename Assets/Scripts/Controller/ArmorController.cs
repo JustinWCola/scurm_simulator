@@ -4,26 +4,52 @@ using UnityEngine;
 
 public class ArmorController : MonoBehaviour
 {
-    private bool isArmorHit;
-    private Collider armor;
+    public bool isArmorHit;
     public LightController armorLight;
+    public SpriteRenderer armorSprite;
+    public enum ArmorNum
+    {
+        Num1 = 0,
+        Num2 = 1,
+        Num3 = 2,
+        Num4 = 3,
+        Num5 = 4,
+        Sentry = 5,
+        Outpost = 6,
+        Base = 7,
+    }
+    public ArmorNum armorNum;
+    public Sprite[] sprites;
+    private float hitTime;
     // Start is called before the first frame update
     private void Start()
     {
-        armor = GetComponent<Collider>();
+        armorSprite.sprite = sprites[(int)armorNum];
+        hitTime = 0.0f;
     }
     // Update is called once per frame
     private void Update()
     {
         if (isArmorHit)
         {
-            armorLight.Blink();
-            isArmorHit = false;
+            armorLight.TurnOff();
+            Debug.Log("hit");
+            hitTime += Time.deltaTime;
+            if (hitTime > 0.1f)
+            {
+                isArmorHit = false;
+                hitTime = 0.0f;
+            }
         }
+        else
+            armorLight.TurnOn();
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider == armor)
+        if (collision.collider.CompareTag("Bullet"))
+        {
             isArmorHit = true;
+            collision.collider.tag = "Untagged";
+        }
     }
 }

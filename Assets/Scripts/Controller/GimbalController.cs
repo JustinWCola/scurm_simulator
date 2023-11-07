@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Animations;
+using UnityEngine.InputSystem;
 
 public class GimbalController : MonoBehaviour
 {
+    public static PlayerInputActions inputActions;
+    public static Vector2 sensitivity = new Vector2(0.1f, 0.1f);
     public Transform yawTransform;
     public Transform pitchTransform;
     public Rigidbody chassisRigidbody;
@@ -14,8 +17,20 @@ public class GimbalController : MonoBehaviour
     public float chassisSpeed = 3;
     public bool isGimbalLock = false;
     public bool isAutoAim = false;
-    private float mouseX, mouseY, keyboardV, keyboardH;
+    private Vector2 moveControl, cameraControl;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        inputActions = new PlayerInputActions();
+    }
+    private void OnEnable()
+    {
+        inputActions.Gameplay.Enable();
+    }
+    private void OnDisable()
+    {
+        inputActions.Gameplay.Disable();
+    }
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -24,14 +39,12 @@ public class GimbalController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        mouseX = Input.GetAxis("Mouse X");
-        mouseY = Input.GetAxis("Mouse Y");
-        keyboardV = Input.GetAxis("Vertical");
-        keyboardH = Input.GetAxis("Horizontal");
+        moveControl = inputActions.Gameplay.Move.ReadValue<Vector2>();
+        cameraControl = inputActions.Gameplay.Camera.ReadValue<Vector2>() * sensitivity;
 
-        if (Input.GetButtonDown("Fire3"))
+        if (inputActions.Gameplay.Lock.WasPressedThisFrame())
             isGimbalLock = !isGimbalLock;
-        if (Input.GetButtonDown("Fire2"))
+        if (inputActions.Gameplay.Aim.WasPressedThisFrame())
             isAutoAim = !isAutoAim;
         // if (Input.GetKeyDown(KeyCode.Space))
         //     chassisRigidbody.AddForce(0, 75, 0, ForceMode.Impulse);
@@ -54,8 +67,8 @@ public class GimbalController : MonoBehaviour
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 offsetSub.enabled = false;
-                yawTransform.Rotate(0, mouseX, 0);
-                pitchTransform.Rotate(-mouseY, 0, 0);
+                yawTransform.Rotate(0, cameraControl.x, 0);
+                pitchTransform.Rotate(-cameraControl.y, 0, 0);
             }
         }
 
@@ -65,7 +78,7 @@ public class GimbalController : MonoBehaviour
         pitchAngle = Mathf.Clamp(pitchAngle, pitchAngleMin, pitchAngleMax);
         pitchTransform.localEulerAngles = new Vector3(pitchAngle, 180, 0);
 
-        if (keyboardV != 0 || keyboardH != 0)
-            chassisRigidbody.velocity = yawTransform.TransformDirection(-keyboardH * chassisSpeed, chassisRigidbody.velocity.y, -keyboardV * chassisSpeed);
+        if (moveControl != Vector2.zero)
+            chassisRigidbody.velocity = yawTransform.TransformDirection(-moveControl.x * chassisSpeed, chassisRigidbody.velocity.y, -moveControl.y * chassisSpeed);
     }
 }

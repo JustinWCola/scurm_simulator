@@ -11,5 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RMUC.unity
     guid: 2e881f14c8962b880a492c04fb480cc7
+  - enabled: 1
+    path: Assets/Scenes/RMUL.unity
+    guid: 0941d2e55d67f944f8867da3a8808ee6
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: e364563a48df5b34fbd6b5739daf644d, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 520a0aad3ced400aab4f82ea4bc40622, type: 2}

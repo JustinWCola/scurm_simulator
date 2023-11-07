@@ -7,7 +7,7 @@ public class DistanceMeasure : MonoBehaviour
 {
     // Start is called before the first frame update
     private Ray ray;
-    public Transform shoot;
+    public Transform origin;
     private TMP_Text text;
     void Start()
     {
@@ -16,7 +16,7 @@ public class DistanceMeasure : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ray = new Ray(shoot.position, shoot.TransformDirection(0, 0, 1));
+        ray = new Ray(origin.position, origin.TransformDirection(0, 0, 1));
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
