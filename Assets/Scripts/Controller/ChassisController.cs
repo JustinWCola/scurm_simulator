@@ -18,9 +18,10 @@ public class ChassisController : MonoBehaviour
         Vertical = 2,
         Random = 3
     }
-    private float spinSpeed;
-    private float moveSpeedX;
-    private float moveSpeedZ;
+    public float spinSpeed;
+    public float moveSpeed;
+    private float moveDirectionX;
+    private float moveDirectionZ;
     private float time;
     // Start is called before the first frame update
     private void Start()
@@ -38,19 +39,25 @@ public class ChassisController : MonoBehaviour
             time = 0.0f;
         }
         transform.Rotate(0, spinSpeed * Time.deltaTime, 0);
-        if (transform.position.x < 4 && transform.position.z < 4)
-        {
-            transform.position += new Vector3(moveSpeedX * Time.deltaTime, 0, moveSpeedZ * Time.deltaTime);
-        }
+        transform.position += new Vector3(moveSpeed * moveDirectionX * Time.deltaTime, 0, moveSpeed * moveDirectionX * Time.deltaTime);
+
+        if (Mathf.Abs(transform.position.x) > 3 && Mathf.Abs(transform.position.z) > 3)
+            FlipDirection();
     }
     private void Reset()
     {
         spinSpeed = Random.Range(-50, 50);
-        moveSpeedX = Random.Range(-1, 1);
-        moveSpeedZ = Random.Range(-1, 1);
+        RandomDirection();
     }
-    private void OnCollisionEnter(Collision collision)
+    private void RandomDirection()
     {
-        Reset();
+        Vector2 direction = Random.insideUnitCircle;
+        moveDirectionX = direction.x;
+        moveDirectionZ = direction.y;
+    }
+    private void FlipDirection()
+    {
+        moveDirectionX = -moveDirectionX;
+        moveDirectionZ = -moveDirectionZ;
     }
 }

@@ -4149,12 +4149,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 626129190}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!23 &626129190
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6106,14 +6106,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 784907277}
     m_Modifications:
-    - target: {fileID: 5389521700824258581, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
-      propertyPath: m_text
-      value: return
-      objectReference: {fileID: 0}
-    - target: {fileID: 5389521700824258581, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4932964783884640508, guid: 4a88c454532b07944a3f0e15825262f5, type: 3}
       propertyPath: m_Name
       value: Button_Return
@@ -6237,6 +6229,14 @@ PrefabInstance:
     - target: {fileID: 7756224876872620258, guid: 4a88c454532b07944a3f0e15825262f5, type: 3}
       propertyPath: m_text
       value: return
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389521700824258581, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
+      propertyPath: m_text
+      value: return
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389521700824258581, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8987,14 +8987,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 784907277}
     m_Modifications:
-    - target: {fileID: 5389521700824258581, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
-      propertyPath: m_text
-      value: exit
-      objectReference: {fileID: 0}
-    - target: {fileID: 5389521700824258581, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4932964783884640508, guid: 4a88c454532b07944a3f0e15825262f5, type: 3}
       propertyPath: m_Name
       value: Button_Exit
@@ -9102,6 +9094,14 @@ PrefabInstance:
     - target: {fileID: 7756224876872620258, guid: 4a88c454532b07944a3f0e15825262f5, type: 3}
       propertyPath: m_text
       value: exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389521700824258581, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
+      propertyPath: m_text
+      value: exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389521700824258581, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

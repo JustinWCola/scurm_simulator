@@ -18,7 +18,8 @@ public class FlowerSpinController : MonoBehaviour
     }
     public SpinDirectionType spinDirection;
     public bool isSpin;
-    private float a, w, b, time;
+    private float a, w, b;
+    private float time = 0.0f;
     // Start is called before the first frame update
     private void Start()
     {

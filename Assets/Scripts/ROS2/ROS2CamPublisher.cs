@@ -37,6 +37,8 @@ public class ROS2CamPublisher : MonoBehaviour
         camInfo.K[4] = fy;
         camInfo.K[5] = cy;
         camInfo.K[8] = 1;
+        camInfo.Width = (uint)cam.pixelWidth;
+        camInfo.Height = (uint)cam.pixelHeight;
         camInfo.D = new double[5];
 
         img = new sensor_msgs.msg.Image();
@@ -64,7 +66,7 @@ public class ROS2CamPublisher : MonoBehaviour
         req.WaitForCompletion();
 
         //转换为ROS2数据包
-        img.Header.Frame_id = "camera_optical_frame";
+        img.Header.Frame_id = "camera_optical_link";
         img.Header.Stamp = timestamp;
         img.Height = (uint)rt.height;
         img.Width = (uint)rt.width;

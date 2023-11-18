@@ -37,9 +37,9 @@ public class ROS2ImuPublisher : MonoBehaviour
                 "yaw_joint",
                 "shoot_yaw_joint"};
         jointState.Position = new double[] {
-                transform.eulerAngles.x,
-                transform.eulerAngles.y,
-                transform.eulerAngles.x };
+                transform.rotation.x,
+                transform.rotation.y,
+                transform.rotation.x };
         jointStatePub.Publish(jointState);
     }
 
