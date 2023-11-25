@@ -15597,6 +15597,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Outpost
       objectReference: {fileID: 0}
+    - target: {fileID: 5167095141586860257, guid: f337124c21c033f258a47245516cd288, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167095141586860257, guid: f337124c21c033f258a47245516cd288, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954177055510569218, guid: f337124c21c033f258a47245516cd288, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954177055510569218, guid: f337124c21c033f258a47245516cd288, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954177055510569218, guid: f337124c21c033f258a47245516cd288, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
