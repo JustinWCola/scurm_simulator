@@ -16146,6 +16146,7 @@ MonoBehaviour:
   spinMode: 1
   spinDirection: -1
   isSpin: 1
+  noiseCoef: 0.05
 --- !u!4 &7580619371932520444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 533051283346350313, guid: 094960ad80c7200419fdcac4ff6e30f4, type: 3}
