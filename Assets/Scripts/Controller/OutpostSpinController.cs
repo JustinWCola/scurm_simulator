@@ -13,8 +13,7 @@ public class OutpostSpinController : MonoBehaviour
     public SpinDirectionType spinDirection;
     public bool isSpin;
     public float noiseCoef;
-    private float noise = 1.0f, noiseLast = 0.0f;
-    private float time = 0.0f;
+    private float noise = 1.0f, noiseLast = 0.0f, noiseTime = 0.0f;
     // Start is called before the first frame update
     private void Start()
     {
@@ -44,13 +43,13 @@ public class OutpostSpinController : MonoBehaviour
     }
     private float NormalSpin()
     {
-        time += Time.deltaTime;
-        if (time > 1.0f)
+        noiseTime += Time.deltaTime;
+        if (noiseTime > 1.0f)
         {
             noiseLast = noise;
             noise = 1.0f + Random.value * noiseCoef * 2.0f - noiseCoef;
-            time = 0.0f;
+            noiseTime = 0.0f;
         }
-        return (float)spinDirection * 0.8f * Mathf.PI * Mathf.Lerp(noiseLast, noise, time);
+        return (float)spinDirection * 0.8f * Mathf.PI * Mathf.Lerp(noiseLast, noise, noiseTime);
     }
 }

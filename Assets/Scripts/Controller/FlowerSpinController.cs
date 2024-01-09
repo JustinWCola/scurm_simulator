@@ -19,7 +19,7 @@ public class FlowerSpinController : MonoBehaviour
     public SpinDirectionType spinDirection;
     public bool isSpin;
     public float noiseCoef;
-    private float noise = 1.0f, noiseLast = 0.0f;
+    private float noise = 1.0f, noiseLast = 0.0f, noiseTime = 0.0f;
     private float a, w, b;
     private float time = 0.0f;
     // Start is called before the first frame update
@@ -68,23 +68,24 @@ public class FlowerSpinController : MonoBehaviour
     private float SinusoidalSpin()
     {
         time += Time.deltaTime;
-        if (time > 1.0f)
+        noiseTime += Time.deltaTime;
+        if (noiseTime > 1.0f)
         {
             noiseLast = noise;
             noise = 1.0f + Random.value * noiseCoef * 2.0f - noiseCoef;
-            time = 0.0f;
+            noiseTime = 0.0f;
         }
-        return (a * Mathf.Sin(w * time) + b) * (float)spinDirection * Mathf.Lerp(noiseLast, noise, time);
+        return (a * Mathf.Sin(w * time) + b) * (float)spinDirection * Mathf.Lerp(noiseLast, noise, noiseTime);
     }
     private float NormalSpin()
     {
-        time += Time.deltaTime;
-        if (time > 1.0f)
+        noiseTime += Time.deltaTime;
+        if (noiseTime > 1.0f)
         {
             noiseLast = noise;
             noise = 1.0f + Random.value * noiseCoef * 2.0f - noiseCoef;
-            time = 0.0f;
+            noiseTime = 0.0f;
         }
-        return (float)spinDirection * 1 / 3 * Mathf.PI * Mathf.Lerp(noiseLast, noise, time);
+        return (float)spinDirection * 1 / 3 * Mathf.PI * Mathf.Lerp(noiseLast, noise, noiseTime);
     }
 }
